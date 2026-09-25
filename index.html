@@ -43,11 +43,11 @@
     <!-- BANDEAU DÉFILANT -->
     <div class="bg-[#0b0a12] text-electricBlue py-2 text-xs font-medium border-b border-purple-900/30 overflow-hidden whitespace-nowrap">
         <div class="animate-pulse px-4 inline-block tracking-wider">
-            💻 MERCAVA TECHNOLOGIES | 🖥️ ORDINATEURS DE TOUT GENRE, MATÉRIEL INFORMATIQUE & 🎮 JEUX VIDÉO | 📞 WHATSAPP : +225 05 74 28 47 95 / +225 07 09 53 28 29 | 🚀 LIVRAISON RAPIDE ABIDJAN ⚡
+            💻 MERCAVA TECHNOLOGIES | 🖥️ ORDINATEURS DE TOUT GENRE, MATÉRIEL INFORMATIQUE & 🎮 JEUX VIDÉO | 📞 WHATSAPP : +225 05 74 28 47 95 / +225 07 09 53 28 29 | 🚀 PAIEMENT WAVE & MOBILE MONEY DISPONIBLE ⚡
         </div>
     </div>
 
-    <!-- HEADER AVEC VOTRE LOGO & SLOGAN OFFICIEL -->
+    <!-- HEADER AVEC LOGO & SLOGAN -->
     <header class="sticky top-0 z-40 bg-[#08070b]/90 backdrop-blur-md border-b border-purple-900/30 shadow-2xl">
         <div class="bg-purple-950/30 border-b border-purple-900/20 py-1.5 px-4 text-xs font-medium text-gray-300 flex flex-wrap justify-between items-center gap-2 max-w-7xl mx-auto">
             <div class="flex items-center gap-2">
@@ -162,7 +162,7 @@
         </div>
     </main>
 
-    <!-- FOOTER AVEC IDENTITÉ MERCAVA -->
+    <!-- FOOTER -->
     <footer class="bg-[#0b0a12] text-gray-400 mt-16 pt-12 pb-8 text-sm border-t border-purple-900/30">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-purple-900/20">
             <div>
@@ -390,12 +390,13 @@
         </div>
     </div>
 
-    <!-- MODAL CHECKOUT -->
-    <div id="checkoutModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md items-center justify-center p-4">
-        <div class="bg-[#12101a] text-gray-100 border border-purple-900/50 rounded-2xl max-w-md w-full p-6 shadow-2xl relative">
+    <!-- MODAL CHECKOUT AVEC MOYENS DE PAIEMENT (WAVE, MOBILE MONEY, ESPÈCES) -->
+    <div id="checkoutModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-[#12101a] text-gray-100 border border-purple-900/50 rounded-2xl max-w-md w-full p-6 shadow-2xl relative my-auto">
             <button onclick="closeCheckoutModal()" aria-label="Fermer" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl font-bold w-9 h-9 flex items-center justify-center rounded-full bg-[#08070b] transition">&times;</button>
             <h3 class="font-extrabold text-lg mb-1 text-white flex items-center gap-2"><i class="fa-solid fa-receipt text-electricBlue"></i> Finaliser votre commande</h3>
-            <p class="text-xs text-gray-400 mb-4">Remplissez vos coordonnées. Votre reçu sera généré et envoyé sur WhatsApp.</p>
+            <p class="text-xs text-gray-400 mb-4">Renseignez vos informations et choisissez votre mode de paiement.</p>
+            
             <form onsubmit="checkoutToWhatsApp(event)" class="space-y-3 text-sm">
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 mb-1">Nom complet *</label>
@@ -409,8 +410,40 @@
                     <label class="block text-xs font-semibold text-gray-300 mb-1">Téléphone (WhatsApp) *</label>
                     <input type="tel" id="clientPhone" required placeholder="Ex: 0700000000" class="w-full bg-[#08070b] border border-purple-900/50 rounded-xl px-3 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-neonViolet">
                 </div>
-                <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
-                    <i class="fa-brands fa-whatsapp text-lg"></i> Envoyer le reçu sur WhatsApp
+
+                <!-- SÉLECTION DU MODE DE PAIEMENT -->
+                <div>
+                    <label class="block text-xs font-semibold text-electricBlue mb-1.5"><i class="fa-solid fa-wallet"></i> Moyen de paiement souhaité *</label>
+                    <div class="grid grid-cols-2 gap-2">
+                        <label class="flex items-center gap-2.5 p-2.5 bg-[#08070b] border border-purple-900/50 rounded-xl cursor-pointer hover:border-neonViolet transition">
+                            <input type="radio" name="paymentMethod" value="Wave" required class="accent-neonViolet">
+                            <span class="text-xs font-bold text-white flex items-center gap-1.5">
+                                <i class="fa-solid fa-water text-cyan-400"></i> Wave
+                            </span>
+                        </label>
+                        <label class="flex items-center gap-2.5 p-2.5 bg-[#08070b] border border-purple-900/50 rounded-xl cursor-pointer hover:border-neonViolet transition">
+                            <input type="radio" name="paymentMethod" value="Orange Money" class="accent-neonViolet">
+                            <span class="text-xs font-bold text-white flex items-center gap-1.5">
+                                <i class="fa-solid fa-circle text-orange-500 text-[8px]"></i> Orange Money
+                            </span>
+                        </label>
+                        <label class="flex items-center gap-2.5 p-2.5 bg-[#08070b] border border-purple-900/50 rounded-xl cursor-pointer hover:border-neonViolet transition">
+                            <input type="radio" name="paymentMethod" value="MTN MoMo" class="accent-neonViolet">
+                            <span class="text-xs font-bold text-white flex items-center gap-1.5">
+                                <i class="fa-solid fa-circle text-yellow-400 text-[8px]"></i> MTN MoMo
+                            </span>
+                        </label>
+                        <label class="flex items-center gap-2.5 p-2.5 bg-[#08070b] border border-purple-900/50 rounded-xl cursor-pointer hover:border-neonViolet transition">
+                            <input type="radio" name="paymentMethod" value="Paiement à la livraison" class="accent-neonViolet">
+                            <span class="text-xs font-bold text-white flex items-center gap-1.5">
+                                <i class="fa-solid fa-hand-holding-dollar text-green-400"></i> À la livraison
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm mt-3">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Envoyer la commande sur WhatsApp
                 </button>
             </form>
         </div>
@@ -1064,6 +1097,10 @@
             const name = document.getElementById('clientName').value.trim();
             const quartier = document.getElementById('clientQuartier').value.trim();
             const phone = document.getElementById('clientPhone').value.trim();
+            
+            // Récupérer le mode de paiement choisi
+            const selectedPayment = document.querySelector('input[name="paymentMethod"]:checked');
+            const paymentMethod = selectedPayment ? selectedPayment.value : 'Non spécifié';
 
             if(!name || !quartier || !phone) { showToast("Veuillez remplir tous les champs."); return; }
 
@@ -1072,7 +1109,8 @@
             text += `📞 *WhatsApp support* : +2250574284795\n\n`;
             text += `👤 *Client* : ${name}\n`;
             text += `🏠 *Quartier/Adresse* : ${quartier}\n`;
-            text += `📱 *Téléphone client* : ${phone}\n\n`;
+            text += `📱 *Téléphone* : ${phone}\n`;
+            text += `💳 *Mode de paiement* : *${paymentMethod}*\n\n`;
             text += `🛒 *RÉCAPITULATIF DES ARTICLES* :\n`;
 
             let total = 0;
@@ -1083,7 +1121,7 @@
             });
 
             text += `\n💰 *MONTANT TOTAL* : *${total.toLocaleString()} FCFA*\n`;
-            text += `\nMerci de confirmer la prise en charge de ma commande !`;
+            text += `\nMerci de valider ma commande et de m'indiquer la marche à suivre pour le paiement !`;
 
             window.open(`https://wa.me/2250574284795?text=${encodeURIComponent(text)}`, '_blank');
             closeCheckoutModal();
