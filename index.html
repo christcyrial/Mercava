@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MERCAVA - Matériel Informatique, PC Gamer & Gaming Gear</title>
+    <title>MERCAVA - Matériel informatiques et divers</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -34,26 +34,25 @@
                 radial-gradient(circle at 10% 10%, rgba(139, 92, 246, 0.06) 0%, transparent 40%),
                 radial-gradient(circle at 90% 90%, rgba(59, 130, 246, 0.06) 0%, transparent 40%);
         }
-        /* Masquer la barre de défilement pour les catégories mobiles */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col font-sans selection:bg-neonViolet selection:text-white">
 
-    <!-- BANDEAU DÉFILANT INFOS -->
+    <!-- BANDEAU DÉFILANT -->
     <div class="bg-[#0b0a12] text-electricBlue py-2 text-xs font-medium border-b border-purple-900/30 overflow-hidden whitespace-nowrap">
         <div class="animate-pulse px-4 inline-block tracking-wider">
-            💻 MERCAVA TECHNOLOGIES | 🎮 PC GAMING, BUREAUTIQUE & BTP | 📞 WHATSAPP : +225 05 74 28 47 95 / +225 07 09 53 28 29 | 🚀 LIVRAISON RAPIDE ABIDJAN ⚡
+            💻 MERCAVA TECHNOLOGIES | 🖥️ ORDINATEURS DE TOUT GENRE, MATÉRIEL INFORMATIQUE & 🎮 JEUX VIDÉO | 📞 WHATSAPP : +225 05 74 28 47 95 / +225 07 09 53 28 29 | 🚀 LIVRAISON RAPIDE ABIDJAN ⚡
         </div>
     </div>
 
-    <!-- HEADER FUTURISTE -->
+    <!-- HEADER AVEC VOTRE LOGO & SLOGAN OFFICIEL -->
     <header class="sticky top-0 z-40 bg-[#08070b]/90 backdrop-blur-md border-b border-purple-900/30 shadow-2xl">
         <div class="bg-purple-950/30 border-b border-purple-900/20 py-1.5 px-4 text-xs font-medium text-gray-300 flex flex-wrap justify-between items-center gap-2 max-w-7xl mx-auto">
             <div class="flex items-center gap-2">
                 <span class="bg-neonViolet/20 border border-neonViolet/50 text-purple-300 px-2 py-0.5 rounded text-[10px] uppercase font-bold flex items-center gap-1">
-                    <i class="fa-solid fa-microchip"></i> High-Tech Store
+                    <i class="fa-solid fa-laptop"></i> High-Tech Store
                 </span>
                 <span class="flex items-center gap-1.5 text-gray-300"><i class="fa-solid fa-location-dot text-electricBlue"></i> <span>YOPOUGON ANANERAI EN FACE DE LA CITE MAMIE ADJOUA</span></span>
             </div>
@@ -65,15 +64,15 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-            <a href="#" class="flex items-center gap-2.5">
-                <div class="font-black text-2xl tracking-widest text-white uppercase flex items-center gap-2">
-                    <span class="bg-gradient-to-r from-white via-purple-300 to-electricBlue bg-clip-text text-transparent">MERCAVA</span>
-                    <span class="text-[10px] bg-neonViolet/30 border border-neonViolet text-purple-300 px-1.5 py-0.5 rounded tracking-normal font-bold">TECH</span>
+            <a href="#" class="flex items-center gap-3">
+                <div class="flex flex-col">
+                    <span class="font-black text-2xl sm:text-3xl tracking-widest text-white uppercase bg-gradient-to-r from-white via-purple-200 to-electricBlue bg-clip-text text-transparent" style="letter-spacing: 0.15em;">MERCAVA</span>
+                    <span class="text-[10px] sm:text-xs text-purple-400 font-medium tracking-wide">Matériel informatiques et divers</span>
                 </div>
             </a>
 
             <div class="flex-1 max-w-xl relative hidden md:block">
-                <input type="text" id="searchInput" placeholder="Rechercher PC Gamer, Station BTP, Composant..." oninput="handleSearch()" class="w-full pl-10 pr-4 py-2 bg-[#12101a] border border-purple-900/40 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:border-neonViolet transition">
+                <input type="text" id="searchInput" placeholder="Rechercher PC Portable, Fixe, Jeu PS5, Composant..." oninput="handleSearch()" class="w-full pl-10 pr-4 py-2 bg-[#12101a] border border-purple-900/40 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:border-neonViolet transition">
                 <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-electricBlue text-xs"></i>
             </div>
 
@@ -98,14 +97,14 @@
     <section class="max-w-7xl mx-auto px-4 py-6 w-full">
         <div class="bg-gradient-to-br from-[#12101a] via-[#0b0a12] to-[#08070b] border border-purple-900/40 rounded-2xl p-6 sm:p-10 text-white shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
             <div class="absolute -right-10 -bottom-10 opacity-5 pointer-events-none text-9xl text-electricBlue">
-                <i class="fa-solid fa-microchip text-[200px]"></i>
+                <i class="fa-solid fa-laptop-code text-[200px]"></i>
             </div>
             <div class="space-y-4 text-center md:text-left z-10">
                 <span class="bg-neonViolet/20 border border-neonViolet/50 text-purple-300 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider inline-flex items-center gap-1.5 shadow-lg">
-                    <i class="fa-solid fa-bolt text-electricBlue"></i> Le Sommet du Gaming & High-Tech
+                    <i class="fa-solid fa-bolt text-electricBlue"></i> Ordinateurs, Matériel & Jeux Vidéo
                 </span>
-                <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white">Matériel Informatique & Stations Pro</h1>
-                <p class="text-sm sm:text-base text-gray-400 max-w-lg">PC portables et fixes puissants, stations BTP, composants graphiques et accessoires dernière génération.</p>
+                <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white">Le Spécialiste High-Tech à Abidjan</h1>
+                <p class="text-sm sm:text-base text-gray-400 max-w-lg">Découvrez notre sélection d'ordinateurs de tout genre (bureautique, gaming, portables, fixes), matériel informatique et jeux vidéo au meilleur prix.</p>
                 <div class="pt-2 flex flex-wrap gap-3 justify-center md:justify-start">
                     <a href="https://wa.me/2250574284795" target="_blank" class="bg-gradient-to-r from-neonViolet to-electricBlue hover:opacity-90 text-white font-extrabold px-6 py-3 rounded-xl shadow-lg shadow-purple-900/30 transition text-sm flex items-center gap-2">
                         <i class="fa-brands fa-whatsapp text-lg"></i> Commander sur WhatsApp
@@ -116,7 +115,7 @@
                 <div class="bg-[#08070b]/80 backdrop-blur-md border border-purple-900/50 p-5 rounded-2xl text-center shadow-2xl">
                     <div class="flex justify-center gap-3 text-3xl sm:text-4xl text-electricBlue mb-3">
                         <i class="fa-solid fa-laptop"></i>
-                        <i class="fa-solid fa-building-shield"></i>
+                        <i class="fa-solid fa-desktop"></i>
                         <i class="fa-solid fa-gamepad"></i>
                     </div>
                     <p class="text-xs font-semibold text-gray-300">Garantie & Test sur place</p>
@@ -135,11 +134,11 @@
             <button onclick="filterCategory('Bureautique')" id="cat-btn-Bureautique" class="cat-btn whitespace-nowrap bg-[#12101a] hover:bg-[#1a1726] text-gray-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-purple-900/40 shadow-sm transition flex items-center gap-1.5">
                 <i class="fa-solid fa-briefcase text-electricBlue"></i>Bureautique
             </button>
-            <button onclick="filterCategory('BTP')" id="cat-btn-BTP" class="cat-btn whitespace-nowrap bg-[#12101a] hover:bg-[#1a1726] text-gray-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-purple-900/40 shadow-sm transition flex items-center gap-1.5">
-                <i class="fa-solid fa-helmet-safety text-electricBlue"></i>BTP (CAO/DAO)
+            <button onclick="filterCategory('Ordinateurs Portables')" id="cat-btn-Ordinateurs Portables" class="cat-btn whitespace-nowrap bg-[#12101a] hover:bg-[#1a1726] text-gray-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-purple-900/40 shadow-sm transition flex items-center gap-1.5">
+                <i class="fa-solid fa-laptop text-electricBlue"></i>PC Portables
             </button>
-            <button onclick="filterCategory('Ordinateurs Gaming')" id="cat-btn-Ordinateurs Gaming" class="cat-btn whitespace-nowrap bg-[#12101a] hover:bg-[#1a1726] text-gray-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-purple-900/40 shadow-sm transition flex items-center gap-1.5">
-                <i class="fa-solid fa-laptop text-electricBlue"></i>Ordinateurs Gaming
+            <button onclick="filterCategory('Ordinateurs Fixes')" id="cat-btn-Ordinateurs Fixes" class="cat-btn whitespace-nowrap bg-[#12101a] hover:bg-[#1a1726] text-gray-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-purple-900/40 shadow-sm transition flex items-center gap-1.5">
+                <i class="fa-solid fa-desktop text-electricBlue"></i>PC Fixes & Gamer
             </button>
             <button onclick="filterCategory('Composants PC')" id="cat-btn-Composants PC" class="cat-btn whitespace-nowrap bg-[#12101a] hover:bg-[#1a1726] text-gray-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-purple-900/40 shadow-sm transition flex items-center gap-1.5">
                 <i class="fa-solid fa-microchip text-electricBlue"></i>Composants PC
@@ -163,7 +162,7 @@
         </div>
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER AVEC IDENTITÉ MERCAVA -->
     <footer class="bg-[#0b0a12] text-gray-400 mt-16 pt-12 pb-8 text-sm border-t border-purple-900/30">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-purple-900/20">
             <div>
@@ -174,10 +173,11 @@
                 <p class="text-xs text-gray-400 leading-relaxed">Création de sites web et applications sur mesure.</p>
             </div>
             <div>
-                <div class="flex items-center gap-2 mb-3">
-                    <span class="text-white font-black text-xl tracking-widest bg-gradient-to-r from-purple-400 to-electricBlue bg-clip-text text-transparent">MERCAVA</span>
+                <div class="flex flex-col mb-3">
+                    <span class="text-white font-black text-xl tracking-widest uppercase bg-gradient-to-r from-purple-400 to-electricBlue bg-clip-text text-transparent" style="letter-spacing: 0.15em;">MERCAVA</span>
+                    <span class="text-[11px] text-purple-400 font-medium">Matériel informatiques et divers</span>
                 </div>
-                <p class="text-xs text-gray-400 leading-relaxed">Spécialiste en matériel informatique, PC bureautique, stations BTP, PC gaming et accessoires à Abidjan.</p>
+                <p class="text-xs text-gray-400 leading-relaxed">Vente d'ordinateurs de tout genre, matériel informatique, PC gamer, jeux vidéo et accessoires à Abidjan.</p>
             </div>
             <div>
                 <h4 class="text-white font-bold text-sm mb-3 flex items-center gap-2"><i class="fa-solid fa-location-dot text-electricBlue"></i> Contact & Adresse</h4>
@@ -195,7 +195,7 @@
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 pt-6 text-center text-xs text-gray-600">
-            © 2026 MERCAVA Technologies - Yopougon Ananeraie. Tous droits réservés.
+            © 2026 MERCAVA (Matériel informatiques et divers) - Yopougon Ananeraie. Tous droits réservés.
         </div>
     </footer>
 
@@ -293,10 +293,10 @@
                             <input type="checkbox" name="adminCat" value="Bureautique" class="accent-neonViolet w-4 h-4 rounded"> Bureautique
                         </label>
                         <label class="flex items-center gap-2 cursor-pointer text-gray-200">
-                            <input type="checkbox" name="adminCat" value="BTP" class="accent-neonViolet w-4 h-4 rounded"> BTP (CAO/DAO)
+                            <input type="checkbox" name="adminCat" value="Ordinateurs Portables" class="accent-neonViolet w-4 h-4 rounded"> PC Portables
                         </label>
                         <label class="flex items-center gap-2 cursor-pointer text-gray-200">
-                            <input type="checkbox" name="adminCat" value="Ordinateurs Gaming" class="accent-neonViolet w-4 h-4 rounded"> Ordinateurs Gaming
+                            <input type="checkbox" name="adminCat" value="Ordinateurs Fixes" class="accent-neonViolet w-4 h-4 rounded"> PC Fixes & Gamer
                         </label>
                         <label class="flex items-center gap-2 cursor-pointer text-gray-200">
                             <input type="checkbox" name="adminCat" value="Composants PC" class="accent-neonViolet w-4 h-4 rounded"> Composants PC
@@ -427,7 +427,7 @@
             {
                 id: 1,
                 name: 'HP ProBook Bureautique i5 12th / 16GB / 512SSD',
-                categories: ['Bureautique'],
+                categories: ['Bureautique', 'Ordinateurs Portables'],
                 price: 280000,
                 promoPrice: 259000,
                 inStock: true,
@@ -436,28 +436,28 @@
             },
             {
                 id: 2,
-                name: 'Station Workstation Dell Precision BTP/CAO (i9, 64GB, RTX A2000)',
-                categories: ['BTP'],
+                name: 'PC Fixe Gamer & Multimédia Core i9 / 64GB / RTX 4070',
+                categories: ['Ordinateurs Fixes'],
                 price: 850000,
                 promoPrice: null,
                 inStock: true,
-                images: ['https://placehold.co/600x400/12101a/3b82f6?text=Station+BTP+CAO'],
-                capacities: ['Processeur : Intel Core i9 / Xeon', 'Carte Graphique : NVIDIA RTX A2000 Pro', 'RAM : 64GB ECC', 'Idéal AutoCAD, Revit, ArchiCAD']
+                images: ['https://placehold.co/600x400/12101a/3b82f6?text=PC+Fixe+Gamer'],
+                capacities: ['Processeur : Intel Core i9', 'Carte Graphique : NVIDIA RTX 4070', 'RAM : 64GB RGB', 'Idéal Gaming extrême & Création']
             },
             {
                 id: 3,
-                name: 'MSI MODERNE 15 B7M RYZEN 7',
-                categories: ['Bureautique'],
+                name: 'MSI MODERNE 15 B7M RYZEN 7 - PC Portable',
+                categories: ['Bureautique', 'Ordinateurs Portables'],
                 price: 450000,
                 promoPrice: 420000,
                 inStock: true,
-                images: ['https://placehold.co/600x400/12101a/3b82f6?text=MSI+Bureautique'],
+                images: ['https://placehold.co/600x400/12101a/3b82f6?text=MSI+Portable'],
                 capacities: ['Processeur : AMD Ryzen 7', 'RAM : 16GB', 'Stockage : 512GB SSD', 'Clavier rétroéclairé']
             },
             {
                 id: 4,
                 name: 'PC Portable Gamer HP Victus 15.6" RTX 4050',
-                categories: ['Ordinateurs Gaming'],
+                categories: ['Ordinateurs Portables', 'Ordinateurs Fixes'],
                 price: 649000,
                 promoPrice: null,
                 inStock: true,
@@ -467,7 +467,7 @@
             {
                 id: 5,
                 name: 'Carte Graphique NVIDIA RTX 4060 8GB OC',
-                categories: ['Composants PC', 'Ordinateurs Gaming'],
+                categories: ['Composants PC'],
                 price: 250000,
                 promoPrice: null,
                 inStock: false,
@@ -487,7 +487,7 @@
             {
                 id: 7,
                 name: 'Clavier Mécanique Gamer SMARTECH 60%',
-                categories: ['Accessoires', 'Ordinateurs Gaming'],
+                categories: ['Accessoires'],
                 price: 32000,
                 promoPrice: null,
                 inStock: true,
@@ -878,7 +878,7 @@
                     </div>
                     <div class="px-4 pb-4 pt-0">
                         ${isOut ? `
-                            <button disabled class="w-full bg-[#08070b] text-gray-600 text-xs font-bold py-2.5 rounded-xl cursor-not-allowed flex items-center justify-center gap-1.5 border border-gray-900">
+                            <button disabled class="w-full bg-[#08070b] text-gray-600 text-xs font-bold py-2.5 rounded-lg cursor-not-allowed flex items-center justify-center gap-1.5 border border-gray-900">
                                 <i class="fa-solid fa-ban"></i> Indisponible
                             </button>
                         ` : `
