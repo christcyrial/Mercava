@@ -31,10 +31,10 @@
 </head>
 <body class="min-h-screen flex flex-col font-sans bg-[#f4f7f6] text-[#334155] dark:bg-[#0f172a] dark:text-[#cbd5e1] selection:bg-teal-500 selection:text-white">
 
-    <!-- BANDEAU DÉFILANT DOUX -->
+    <!-- BANDEAU DÉFILANT -->
     <div class="bg-[#e2e8f0] text-[#475569] dark:bg-[#1e293b] dark:text-[#94a3b8] py-2 text-xs font-medium border-b border-[#cbd5e1] dark:border-[#334155] overflow-hidden whitespace-nowrap">
         <div class="animate-pulse px-4 inline-block tracking-wider">
-            💻 MERCAVA TECHNOLOGIES | 🖥️ ORDINATEURS DE TOUT GENRE, MATÉRIEL INFORMATIQUE & 🎮 JEUX VIDÉO | 📞 WHATSAPP : +225 07 09 532 928 | 🚀 PAIEMENT WAVE & MOBILE MONEY DISPONIBLE ⚡
+            💻 MERCAVA TECHNOLOGIES | 🖥️ ORDINATEURS DE TOUT GENRE, MATÉRIEL INFORMATIQUE & 🎮 JEUX VIDÉO | 📞 WHATSAPP : +225 07 09 532 829 | 🚀 PAIEMENT WAVE & MOBILE MONEY DISPONIBLE ⚡
         </div>
     </div>
 
@@ -48,8 +48,8 @@
                 <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-[#0d9488] dark:text-teal-400"></i> <span>YOPOUGON ANANERAI EN FACE DE LA CITE MAMIE ADJOUA</span></span>
             </div>
             <div class="flex items-center gap-4">
-                <a href="https://wa.me/2250709532928" target="_blank" class="flex items-center gap-1 text-[#0d9488] dark:text-teal-400 font-bold hover:underline">
-                    <i class="fa-brands fa-whatsapp text-sm"></i> +225 07 09 532 928
+                <a href="https://wa.me/2250709532829" target="_blank" class="flex items-center gap-1 text-[#0d9488] dark:text-teal-400 font-bold hover:underline">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> +225 07 09 532 829
                 </a>
             </div>
         </div>
@@ -99,7 +99,7 @@
                 <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#0f172a] dark:text-white">Le Spécialiste High-Tech à Abidjan</h1>
                 <p class="text-sm sm:text-base text-[#64748b] dark:text-[#94a3b8] max-w-lg">Découvrez notre sélection d'ordinateurs de tout genre, matériel informatique et jeux vidéo au meilleur prix.</p>
                 <div class="pt-2 flex flex-wrap gap-3 justify-center md:justify-start">
-                    <a href="https://wa.me/2250709532928" target="_blank" class="bg-[#0f172a] hover:bg-[#1e293b] dark:bg-teal-600 dark:hover:bg-teal-700 text-white font-extrabold px-6 py-3 rounded-xl shadow-md transition text-sm flex items-center gap-2">
+                    <a href="https://wa.me/2250709532829" target="_blank" class="bg-[#0f172a] hover:bg-[#1e293b] dark:bg-teal-600 dark:hover:bg-teal-700 text-white font-extrabold px-6 py-3 rounded-xl shadow-md transition text-sm flex items-center gap-2">
                         <i class="fa-brands fa-whatsapp text-lg"></i> Commander sur WhatsApp
                     </a>
                 </div>
@@ -118,7 +118,7 @@
         </div>
     </section>
 
-    <!-- FILTRES CATÉGORIES -->
+    <!-- FILTRES CATÉGORIES AVEC RETOUR VISUEL ACTIF -->
     <section class="max-w-7xl mx-auto px-4 py-2 w-full">
         <div class="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar">
             <button onclick="filterCategory('Tous')" id="cat-btn-Tous" class="cat-btn whitespace-nowrap bg-[#0f172a] dark:bg-teal-600 text-white font-bold text-xs px-4.5 py-2.5 rounded-full shadow transition flex items-center gap-1.5"><i class="fa-solid fa-layer-group"></i>Tous</button>
@@ -154,8 +154,8 @@
             <div>
                 <h4 class="text-[#0f172a] dark:text-white font-bold text-sm mb-3 flex items-center gap-2"><i class="fa-solid fa-location-dot text-[#0d9488] dark:text-teal-400"></i> Contact & Adresse</h4>
                 <p class="text-xs text-[#475569] dark:text-[#cbd5e1] mb-2">YOPOUGON ANANERAI EN FACE DE LA CITE MAMIE ADJOUA</p>
-                <p class="text-xs text-green-600 dark:text-green-400 font-bold mb-3">+225 07 09 532 928</p>
-                <a href="https://wa.me/2250709532928" target="_blank" class="inline-flex items-center gap-2 bg-[#0f172a] hover:bg-[#1e293b] dark:bg-teal-600 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-sm transition"><i class="fa-brands fa-whatsapp text-base"></i> Écrire sur WhatsApp</a>
+                <p class="text-xs text-green-600 dark:text-green-400 font-bold mb-3">+225 07 09 532 829</p>
+                <a href="https://wa.me/2250709532829" target="_blank" class="inline-flex items-center gap-2 bg-[#0f172a] hover:bg-[#1e293b] dark:bg-teal-600 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-sm transition"><i class="fa-brands fa-whatsapp text-base"></i> Écrire sur WhatsApp</a>
                 <div class="mt-6"><button onclick="openAdminLogin()" class="text-xs text-[#94a3b8] hover:text-[#0f172a] dark:hover:text-teal-400 transition flex items-center gap-1.5"><i class="fa-solid fa-lock text-[10px]"></i> Espace Admin</button></div>
             </div>
         </div>
@@ -225,7 +225,7 @@
                         <option value="false">❌ Rupture de stock</option>
                     </select>
                 </div>
-                <div><label class="block font-semibold mb-1">Images</label><input type="file" id="newProdImageFiles" accept="image/*" multiple class="w-full text-xs"></div>
+                <div><label class="block font-semibold mb-1">Images (plusieurs possibles)</label><input type="file" id="newProdImageFiles" accept="image/*" multiple class="w-full text-xs"></div>
                 <div><label class="block font-semibold mb-1">Caractéristiques (séparées par des virgules) *</label><input type="text" id="newProdSpecs" required class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#cbd5e1] dark:border-[#334155] rounded-xl px-3 py-2"></div>
                 <button type="submit" id="adminAddSubmitBtn" class="w-full bg-[#0f172a] dark:bg-teal-600 text-white font-bold py-3 rounded-xl">Publier</button>
             </form>
@@ -242,21 +242,24 @@
         </div>
     </div>
 
-    <!-- MODAL DETAIL & PANIER -->
+    <!-- MODAL DETAIL & CARACTERISTIQUES (MULTIPLE ANGLES) -->
     <div id="productDetailModal" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm items-center justify-center p-4 overflow-y-auto">
-        <div class="bg-white dark:bg-[#1e293b] text-[#0f172a] dark:text-white border border-[#e2e8f0] dark:border-[#334155] rounded-2xl max-w-3xl w-full p-6 shadow-xl relative my-auto max-h-[90vh] overflow-y-auto">
+        <div class="bg-white dark:bg-[#1e293b] text-[#0f172a] dark:text-white border border-[#e2e8f0] dark:border-[#334155] rounded-2xl max-w-2xl w-full p-6 shadow-xl relative my-auto max-h-[90vh] overflow-y-auto">
             <button onclick="closeProductDetailModal()" class="absolute top-4 right-4 text-[#94a3b8] text-2xl font-bold">&times;</button>
             <div id="productDetailContent"></div>
         </div>
     </div>
 
+    <!-- TIROIR PANIER -->
     <div id="cartDrawer" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm justify-end">
         <div class="bg-white dark:bg-[#1e293b] text-[#0f172a] dark:text-white border-l border-[#e2e8f0] dark:border-[#334155] w-full max-w-md h-full shadow-2xl flex flex-col justify-between">
             <div class="p-4 border-b flex items-center justify-center relative"><h3 class="font-extrabold text-base">Mon Panier</h3><button onclick="closeCartDrawer()" class="absolute right-4 text-xl font-bold">&times;</button></div>
             <div id="cartItemsContainer" class="flex-grow overflow-y-auto p-4 space-y-3"></div>
             <div class="p-4 border-t space-y-3">
                 <div class="flex justify-between items-center text-sm font-bold"><span>Total :</span><span id="cartTotalPrice" class="text-[#0d9488] dark:text-teal-400 text-lg">0 FCFA</span></div>
-                <button onclick="openCheckoutModal()" class="w-full bg-[#0f172a] dark:bg-teal-600 text-white font-bold py-3 rounded-xl">Valider</button>
+                <button onclick="openCheckoutModal()" class="w-full bg-[#0f172a] dark:bg-teal-600 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Valider sur WhatsApp
+                </button>
             </div>
         </div>
     </div>
@@ -281,7 +284,6 @@
         let cart = [];
         let editingProductId = null;
 
-        // 1. Charger les produits depuis Supabase au démarrage
         async function loadProducts() {
             const { data, error } = await db.from('products').select('*');
             if (error) {
@@ -296,7 +298,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const savedTheme = localStorage.getItem('mercava_theme') || 'light';
             if(savedTheme === 'dark') document.documentElement.classList.add('dark');
-            loadProducts(); // Appel au démarrage
+            loadProducts();
         });
 
         function toggleTheme() {
@@ -357,7 +359,6 @@
             document.getElementById('adminAddModal').style.display = 'flex';
         }
 
-        // 2. Ajouter ou modifier un article via .upsert() vers Supabase
         async function handleSaveProduct(e) {
             e.preventDefault();
             const name = document.getElementById('newProdName').value;
@@ -388,7 +389,6 @@
                     productData.images = ['https://placehold.co/600x400'];
                 }
 
-                // Requête UPSERT vers Supabase
                 const { error } = await db.from('products').upsert(productData);
                 if (error) {
                     showToast("Erreur lors de l'enregistrement");
@@ -457,10 +457,19 @@
             `).join('');
         }
 
+        // GESTION DES FILTRES AVEC RETOUR VISUEL ACTIF CLAIR
         function filterCategory(cat) {
             currentCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.className = "cat-btn whitespace-nowrap bg-white dark:bg-[#1e293b] text-[#475569] dark:text-[#94a3b8] font-semibold text-xs px-4.5 py-2.5 rounded-full border border-[#e2e8f0] dark:border-[#334155] shadow-sm transition flex items-center gap-1.5";
+            });
+            const activeBtn = document.getElementById(`cat-btn-${cat}`);
+            if (activeBtn) {
+                activeBtn.className = "cat-btn whitespace-nowrap bg-[#0f172a] dark:bg-teal-600 text-white font-bold text-xs px-4.5 py-2.5 rounded-full shadow transition flex items-center gap-1.5";
+            }
             renderProducts();
         }
+
         function handleSearch() {
             searchQuery = document.getElementById('searchInput').value.toLowerCase();
             renderProducts();
@@ -501,13 +510,57 @@
             }).join('');
         }
 
+        // FICHE DETAIL PRODUIT AVEC TOUTES LES IMAGES (SOUS PLUSIEURS ANGLES) ET CARACTERISTIQUES
         function openProductDetailModal(id) {
             const p = products.find(prod => prod.id === id);
             if(!p) return;
+            const images = p.images && p.images.length > 0 ? p.images : ['https://placehold.co/600x400'];
+
             document.getElementById('productDetailContent').innerHTML = `
-                <h2 class="text-xl font-bold">${p.name}</h2>
-                <p class="text-[#0d9488] font-extrabold text-lg my-2">${p.price.toLocaleString()} FCFA</p>
-                <img src="${p.images?.[0] || ''}" class="w-full h-64 object-cover rounded-xl my-4">
+                <div class="space-y-4">
+                    <!-- Image Principale -->
+                    <div class="aspect-video bg-[#f8fafc] dark:bg-[#0f172a] rounded-xl overflow-hidden relative border border-[#e2e8f0] dark:border-[#334155]">
+                        <img id="mainDetailImg" src="${images[0]}" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Miniatures (Plusieurs angles) -->
+                    ${images.length > 1 ? `
+                    <div>
+                        <p class="text-[11px] font-bold text-[#64748b] mb-1">Vues sous plusieurs angles :</p>
+                        <div class="flex gap-2 overflow-x-auto pb-2">
+                            ${images.map((img, idx) => `
+                                <img src="${img}" onclick="document.getElementById('mainDetailImg').src='${img}'" class="w-16 h-16 object-cover rounded-lg cursor-pointer border-2 hover:border-[#0d9488] transition shadow-sm">
+                            `).join('')}
+                        </div>
+                    </div>` : ''}
+                    
+                    <div>
+                        <span class="text-xs bg-[#0d9488]/10 text-[#0d9488] dark:text-teal-400 px-2.5 py-1 rounded-full font-bold">${p.categories?.[0] || 'Article'}</span>
+                        <h2 class="text-lg sm:text-xl font-bold mt-2">${p.name}</h2>
+                        <div class="flex items-center gap-3 mt-2">
+                            <span class="text-xl font-extrabold text-[#0d9488] dark:text-teal-400">${p.price.toLocaleString()} FCFA</span>
+                            ${p.promo_price ? `<span class="text-sm line-through text-gray-400">${p.promo_price.toLocaleString()} FCFA</span>` : ''}
+                        </div>
+                    </div>
+
+                    <!-- Caractéristiques / Capacités -->
+                    ${p.capacities && p.capacities.length > 0 ? `
+                    <div class="bg-[#f8fafc] dark:bg-[#0f172a] p-4 rounded-xl border border-[#e2e8f0] dark:border-[#334155]">
+                        <h4 class="text-xs font-bold text-[#64748b] dark:text-[#94a3b8] uppercase tracking-wider mb-2">Caractéristiques :</h4>
+                        <div class="flex flex-wrap gap-1.5">
+                            ${p.capacities.map(cap => `<span class="bg-white dark:bg-[#1e293b] border border-[#cbd5e1] dark:border-[#334155] text-xs px-3 py-1 rounded-lg font-medium">${cap}</span>`).join('')}
+                        </div>
+                    </div>` : ''}
+
+                    <!-- Boutons d'action -->
+                    <div class="pt-4 border-t border-[#e2e8f0] dark:border-[#334155] flex gap-3">
+                        <button onclick="addToCart(${p.id}); closeProductDetailModal();" class="flex-1 bg-[#0f172a] dark:bg-teal-600 text-white font-bold py-3 rounded-xl text-xs flex items-center justify-center gap-2 shadow transition">
+                            <i class="fa-solid fa-cart-shopping"></i> Ajouter au panier
+                        </button>
+                        <a href="https://wa.me/2250709532829?text=${encodeURIComponent('Bonjour MERCAVA, je suis intéressé par cet article : ' + p.name + ' au prix de ' + p.price.toLocaleString() + ' FCFA')}" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-xl text-xs flex items-center gap-2 shadow transition">
+                            <i class="fa-brands fa-whatsapp text-base"></i> Commander
+                        </a>
+                    </div>
+                </div>
             `;
             document.getElementById('productDetailModal').style.display = 'flex';
         }
@@ -527,7 +580,23 @@
         }
         function openCartDrawer() { document.getElementById('cartDrawer').style.display = 'flex'; }
         function closeCartDrawer() { document.getElementById('cartDrawer').style.display = 'none'; }
-        function openCheckoutModal() { alert("Redirection vers WhatsApp..."); }
+        
+        function openCheckoutModal() {
+            if(cart.length === 0) {
+                showToast("Votre panier est vide");
+                return;
+            }
+            let message = "Bonjour MERCAVA, je souhaite commander les articles suivants :\n\n";
+            cart.forEach(item => {
+                message += `- ${item.name} (x${item.quantity}) : ${(item.price * item.quantity).toLocaleString()} FCFA\n`;
+            });
+            const total = cart.reduce((a,b)=>a+(b.price*b.quantity),0);
+            message += `\n*Total : ${total.toLocaleString()} FCFA*`;
+            
+            const whatsappUrl = `https://wa.me/2250709532829?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
         function showToast(msg) {
             const t = document.getElementById('toastNotification');
             document.getElementById('toastText').textContent = msg;
