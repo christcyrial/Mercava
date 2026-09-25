@@ -20,7 +20,6 @@
         }
     </script>
     <style>
-        /* TRANSITIONS FLUIDES POUR LE CHANGEMENT DE THÈME */
         body {
             transition: background-color 0.3s ease, color 0.3s ease;
         }
@@ -28,26 +27,26 @@
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="min-h-screen flex flex-col font-sans bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 selection:bg-indigo-500 selection:text-white">
+<body class="min-h-screen flex flex-col font-sans bg-[#f4f7f6] text-[#334155] dark:bg-[#0f172a] dark:text-[#cbd5e1] selection:bg-teal-500 selection:text-white">
 
-    <!-- BANDEAU DÉFILANT -->
-    <div class="bg-indigo-900 text-indigo-100 dark:bg-slate-900 dark:text-indigo-400 py-2 text-xs font-medium border-b border-indigo-200 dark:border-slate-800 overflow-hidden whitespace-nowrap">
+    <!-- BANDEAU DÉFILANT DOUX -->
+    <div class="bg-[#e2e8f0] text-[#475569] dark:bg-[#1e293b] dark:text-[#94a3b8] py-2 text-xs font-medium border-b border-[#cbd5e1] dark:border-[#334155] overflow-hidden whitespace-nowrap">
         <div class="animate-pulse px-4 inline-block tracking-wider">
             💻 MERCAVA TECHNOLOGIES | 🖥️ ORDINATEURS DE TOUT GENRE, MATÉRIEL INFORMATIQUE & 🎮 JEUX VIDÉO | 📞 WHATSAPP : +225 07 09 532 928 | 🚀 PAIEMENT WAVE & MOBILE MONEY DISPONIBLE ⚡
         </div>
     </div>
 
-    <!-- HEADER AVEC SÉLECTEUR DE THÈME CLAIR / SOMBRE -->
-    <header class="sticky top-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
-        <div class="bg-slate-100 dark:bg-slate-950/50 border-b border-slate-200 dark:border-slate-800/80 py-1.5 px-4 text-xs font-medium text-slate-600 dark:text-slate-400 flex flex-wrap justify-between items-center gap-2 max-w-7xl mx-auto">
+    <!-- HEADER -->
+    <header class="sticky top-0 z-40 bg-white/95 dark:bg-[#1e293b]/95 backdrop-blur-md border-b border-[#e2e8f0] dark:border-[#334155] shadow-sm">
+        <div class="bg-[#f8fafc] dark:bg-[#0f172a] border-b border-[#e2e8f0] dark:border-[#334155] py-1.5 px-4 text-xs font-medium text-[#64748b] dark:text-[#94a3b8] flex flex-wrap justify-between items-center gap-2 max-w-7xl mx-auto">
             <div class="flex items-center gap-2">
-                <span class="bg-indigo-600 text-white px-2.5 py-0.5 rounded text-[10px] uppercase font-black tracking-widest shadow-sm flex items-center gap-1">
+                <span class="bg-[#0d9488] text-white px-2.5 py-0.5 rounded text-[10px] uppercase font-black tracking-widest shadow-sm flex items-center gap-1">
                     <i class="fa-solid fa-cube"></i> MERCAVA STORE
                 </span>
-                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-indigo-600 dark:text-indigo-400"></i> <span>YOPOUGON ANANERAI EN FACE DE LA CITE MAMIE ADJOUA</span></span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-[#0d9488] dark:text-teal-400"></i> <span>YOPOUGON ANANERAI EN FACE DE LA CITE MAMIE ADJOUA</span></span>
             </div>
             <div class="flex items-center gap-4">
-                <a href="https://wa.me/2250709532928" target="_blank" class="flex items-center gap-1 text-indigo-600 dark:text-indigo-400 font-bold hover:underline">
+                <a href="https://wa.me/2250709532928" target="_blank" class="flex items-center gap-1 text-[#0d9488] dark:text-teal-400 font-bold hover:underline">
                     <i class="fa-brands fa-whatsapp text-sm"></i> +225 07 09 532 928
                 </a>
             </div>
@@ -56,65 +55,62 @@
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
             <a href="#" class="flex items-center gap-3">
                 <div class="flex flex-col">
-                    <span class="font-black text-2xl sm:text-3xl tracking-widest uppercase bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-400 dark:to-blue-400 bg-clip-text text-transparent" style="letter-spacing: 0.15em;">MERCAVA</span>
-                    <span class="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium tracking-wide">Matériel informatiques et divers</span>
+                    <span class="font-black text-2xl sm:text-3xl tracking-widest uppercase text-[#1e293b] dark:text-white" style="letter-spacing: 0.15em;">MERCAVA</span>
+                    <span class="text-[10px] sm:text-xs text-[#64748b] dark:text-[#94a3b8] font-medium tracking-wide">Matériel informatiques et divers</span>
                 </div>
             </a>
 
             <div class="flex-1 max-w-xl relative hidden md:block">
-                <input type="text" id="searchInput" placeholder="Rechercher PC Portable, Fixe, Jeu PS5, Composant..." oninput="handleSearch()" class="w-full pl-10 pr-4 py-2 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-indigo-500 transition">
-                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-indigo-500 text-xs"></i>
+                <input type="text" id="searchInput" placeholder="Rechercher PC Portable, Fixe, Jeu PS5, Composant..." oninput="handleSearch()" class="w-full pl-10 pr-4 py-2 bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#cbd5e1] dark:border-[#334155] rounded-xl text-sm text-[#1e293b] dark:text-white placeholder-[#94a3b8] focus:outline-none focus:border-[#0d9488] transition">
+                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-[#94a3b8] text-xs"></i>
             </div>
 
             <div class="flex items-center gap-3">
-                <!-- BOUTON CHANGEMENT DE THÈME CLAIR / SOMBRE -->
-                <button onclick="toggleTheme()" class="flex items-center justify-center w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-yellow-400 transition shadow-sm" title="Changer de thème">
+                <!-- BOUTON THÈME CLAIR / SOMBRE -->
+                <button onclick="toggleTheme()" class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#f1f5f9] dark:bg-[#0f172a] hover:bg-[#e2e8f0] dark:hover:bg-[#334155] border border-[#cbd5e1] dark:border-[#334155] text-[#475569] dark:text-teal-400 transition shadow-sm" title="Changer de thème">
                     <i id="themeIcon" class="fa-solid fa-moon text-sm"></i>
                 </button>
 
-                <button onclick="openCartDrawer()" class="relative flex items-center gap-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 px-4 py-2 rounded-xl font-semibold text-sm transition text-slate-800 dark:text-white shadow-sm">
-                    <i class="fa-solid fa-cart-shopping text-indigo-600 dark:text-indigo-400"></i>
+                <button onclick="openCartDrawer()" class="relative flex items-center gap-2 bg-[#f1f5f9] dark:bg-[#0f172a] hover:bg-[#e2e8f0] dark:hover:bg-[#334155] border border-[#cbd5e1] dark:border-[#334155] px-4 py-2 rounded-xl font-semibold text-sm transition text-[#1e293b] dark:text-white shadow-sm">
+                    <i class="fa-solid fa-cart-shopping text-[#0d9488] dark:text-teal-400"></i>
                     <span class="hidden sm:inline">Panier</span>
-                    <span id="cartBadge" class="bg-indigo-600 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center shadow">0</span>
+                    <span id="cartBadge" class="bg-[#0d9488] text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center shadow">0</span>
                 </button>
             </div>
         </div>
 
         <div class="px-4 pb-3 md:hidden">
             <div class="relative w-full">
-                <input type="text" id="searchInputMobile" placeholder="Rechercher un article..." oninput="handleSearch()" class="w-full pl-10 pr-4 py-2 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-indigo-500">
-                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-indigo-500 text-xs"></i>
+                <input type="text" id="searchInputMobile" placeholder="Rechercher un article..." oninput="handleSearch()" class="w-full pl-10 pr-4 py-2 bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#cbd5e1] dark:border-[#334155] rounded-xl text-sm text-[#1e293b] dark:text-white placeholder-[#94a3b8] focus:outline-none focus:border-[#0d9488]">
+                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-[#94a3b8] text-xs"></i>
             </div>
         </div>
     </header>
 
-    <!-- SECTION HERO -->
+    <!-- SECTION HERO DOUCE -->
     <section class="max-w-7xl mx-auto px-4 py-6 w-full">
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-10 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
-            <div class="absolute -right-10 -bottom-10 opacity-5 pointer-events-none text-9xl text-indigo-600">
-                <i class="fa-solid fa-laptop-code text-[200px]"></i>
-            </div>
+        <div class="bg-white dark:bg-[#1e293b] border border-[#e2e8f0] dark:border-[#334155] rounded-2xl p-6 sm:p-10 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
             <div class="space-y-4 text-center md:text-left z-10">
-                <span class="bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider inline-flex items-center gap-1.5">
-                    <i class="fa-solid fa-bolt text-indigo-600 dark:text-indigo-400"></i> Ordinateurs, Matériel & Jeux Vidéo
+                <span class="bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#cbd5e1] dark:border-[#334155] text-[#0d9488] dark:text-teal-400 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider inline-flex items-center gap-1.5">
+                    <i class="fa-solid fa-bolt text-[#0d9488] dark:text-teal-400"></i> Ordinateurs, Matériel & Jeux Vidéo
                 </span>
-                <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">Le Spécialiste High-Tech à Abidjan</h1>
-                <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-lg">Découvrez notre sélection d'ordinateurs de tout genre (bureautique, gaming, portables, fixes), matériel informatique et jeux vidéo au meilleur prix.</p>
+                <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-[#0f172a] dark:text-white">Le Spécialiste High-Tech à Abidjan</h1>
+                <p class="text-sm sm:text-base text-[#64748b] dark:text-[#94a3b8] max-w-lg">Découvrez notre sélection d'ordinateurs de tout genre (bureautique, gaming, portables, fixes), matériel informatique et jeux vidéo au meilleur prix.</p>
                 <div class="pt-2 flex flex-wrap gap-3 justify-center md:justify-start">
-                    <a href="https://wa.me/2250709532928" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold px-6 py-3 rounded-xl shadow-md transition text-sm flex items-center gap-2">
+                    <a href="https://wa.me/2250709532928" target="_blank" class="bg-[#0f172a] hover:bg-[#1e293b] dark:bg-teal-600 dark:hover:bg-teal-700 text-white font-extrabold px-6 py-3 rounded-xl shadow-md transition text-sm flex items-center gap-2">
                         <i class="fa-brands fa-whatsapp text-lg"></i> Commander sur WhatsApp
                     </a>
                 </div>
             </div>
             <div class="flex-shrink-0 z-10">
-                <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 p-5 rounded-2xl text-center shadow-sm">
-                    <div class="flex justify-center gap-3 text-3xl sm:text-4xl text-indigo-600 dark:text-indigo-400 mb-3">
+                <div class="bg-[#f8fafc] dark:bg-[#0f172a] border border-[#e2e8f0] dark:border-[#334155] p-5 rounded-2xl text-center shadow-sm">
+                    <div class="flex justify-center gap-3 text-3xl sm:text-4xl text-[#0d9488] dark:text-teal-400 mb-3">
                         <i class="fa-solid fa-laptop"></i>
                         <i class="fa-solid fa-desktop"></i>
                         <i class="fa-solid fa-gamepad"></i>
                     </div>
-                    <p class="text-xs font-semibold text-slate-700 dark:text-slate-200">Garantie & Test sur place</p>
-                    <p class="text-xs font-bold text-indigo-600 dark:text-indigo-400 mt-1">LIVRAISON ABIDJAN & INTÉRIEUR</p>
+                    <p class="text-xs font-semibold text-[#475569] dark:text-[#cbd5e1]">Garantie & Test sur place</p>
+                    <p class="text-xs font-bold text-[#0d9488] dark:text-teal-400 mt-1">LIVRAISON ABIDJAN & INTÉRIEUR</p>
                 </div>
             </div>
         </div>
@@ -123,29 +119,29 @@
     <!-- FILTRES CATÉGORIES -->
     <section class="max-w-7xl mx-auto px-4 py-2 w-full">
         <div class="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar">
-            <button onclick="filterCategory('Tous')" id="cat-btn-Tous" class="cat-btn whitespace-nowrap bg-indigo-600 text-white font-bold text-xs px-4.5 py-2.5 rounded-full shadow transition flex items-center gap-1.5">
+            <button onclick="filterCategory('Tous')" id="cat-btn-Tous" class="cat-btn whitespace-nowrap bg-[#0f172a] dark:bg-teal-600 text-white font-bold text-xs px-4.5 py-2.5 rounded-full shadow transition flex items-center gap-1.5">
                 <i class="fa-solid fa-layer-group"></i>Tous
             </button>
-            <button onclick="filterCategory('Bureautique')" id="cat-btn-Bureautique" class="cat-btn whitespace-nowrap bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-slate-200 dark:border-slate-800 shadow-sm transition flex items-center gap-1.5">
-                <i class="fa-solid fa-briefcase text-indigo-500"></i>Bureautique
+            <button onclick="filterCategory('Bureautique')" id="cat-btn-Bureautique" class="cat-btn whitespace-nowrap bg-white dark:bg-[#1e293b] hover:bg-[#f1f5f9] dark:hover:bg-[#0f172a] text-[#475569] dark:text-[#94a3b8] font-semibold text-xs px-4.5 py-2.5 rounded-full border border-[#e2e8f0] dark:border-[#334155] shadow-sm transition flex items-center gap-1.5">
+                <i class="fa-solid fa-briefcase text-[#0d9488]"></i>Bureautique
             </button>
-            <button onclick="filterCategory('Ordinateurs Portables')" id="cat-btn-Ordinateurs Portables" class="cat-btn whitespace-nowrap bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-slate-200 dark:border-slate-800 shadow-sm transition flex items-center gap-1.5">
-                <i class="fa-solid fa-laptop text-indigo-500"></i>PC Portables
+            <button onclick="filterCategory('Ordinateurs Portables')" id="cat-btn-Ordinateurs Portables" class="cat-btn whitespace-nowrap bg-white dark:bg-[#1e293b] hover:bg-[#f1f5f9] dark:hover:bg-[#0f172a] text-[#475569] dark:text-[#94a3b8] font-semibold text-xs px-4.5 py-2.5 rounded-full border border-[#e2e8f0] dark:border-[#334155] shadow-sm transition flex items-center gap-1.5">
+                <i class="fa-solid fa-laptop text-[#0d9488]"></i>PC Portables
             </button>
-            <button onclick="filterCategory('Ordinateurs Fixes')" id="cat-btn-Ordinateurs Fixes" class="cat-btn whitespace-nowrap bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-slate-200 dark:border-slate-800 shadow-sm transition flex items-center gap-1.5">
-                <i class="fa-solid fa-desktop text-indigo-500"></i>PC Fixes & Gamer
+            <button onclick="filterCategory('Ordinateurs Fixes')" id="cat-btn-Ordinateurs Fixes" class="cat-btn whitespace-nowrap bg-white dark:bg-[#1e293b] hover:bg-[#f1f5f9] dark:hover:bg-[#0f172a] text-[#475569] dark:text-[#94a3b8] font-semibold text-xs px-4.5 py-2.5 rounded-full border border-[#e2e8f0] dark:border-[#334155] shadow-sm transition flex items-center gap-1.5">
+                <i class="fa-solid fa-desktop text-[#0d9488]"></i>PC Fixes & Gamer
             </button>
-            <button onclick="filterCategory('Composants PC')" id="cat-btn-Composants PC" class="cat-btn whitespace-nowrap bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-slate-200 dark:border-slate-800 shadow-sm transition flex items-center gap-1.5">
-                <i class="fa-solid fa-microchip text-indigo-500"></i>Composants PC
+            <button onclick="filterCategory('Composants PC')" id="cat-btn-Composants PC" class="cat-btn whitespace-nowrap bg-white dark:bg-[#1e293b] hover:bg-[#f1f5f9] dark:hover:bg-[#0f172a] text-[#475569] dark:text-[#94a3b8] font-semibold text-xs px-4.5 py-2.5 rounded-full border border-[#e2e8f0] dark:border-[#334155] shadow-sm transition flex items-center gap-1.5">
+                <i class="fa-solid fa-microchip text-[#0d9488]"></i>Composants PC
             </button>
-            <button onclick="filterCategory('Jeux Vidéo')" id="cat-btn-Jeux Vidéo" class="cat-btn whitespace-nowrap bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-slate-200 dark:border-slate-800 shadow-sm transition flex items-center gap-1.5">
-                <i class="fa-solid fa-gamepad text-indigo-500"></i>Jeux Vidéo
+            <button onclick="filterCategory('Jeux Vidéo')" id="cat-btn-Jeux Vidéo" class="cat-btn whitespace-nowrap bg-white dark:bg-[#1e293b] hover:bg-[#f1f5f9] dark:hover:bg-[#0f172a] text-[#475569] dark:text-[#94a3b8] font-semibold text-xs px-4.5 py-2.5 rounded-full border border-[#e2e8f0] dark:border-[#334155] shadow-sm transition flex items-center gap-1.5">
+                <i class="fa-solid fa-gamepad text-[#0d9488]"></i>Jeux Vidéo
             </button>
-            <button onclick="filterCategory('Accessoires')" id="cat-btn-Accessoires" class="cat-btn whitespace-nowrap bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-slate-200 dark:border-slate-800 shadow-sm transition flex items-center gap-1.5">
-                <i class="fa-solid fa-headphones text-indigo-500"></i>Accessoires
+            <button onclick="filterCategory('Accessoires')" id="cat-btn-Accessoires" class="cat-btn whitespace-nowrap bg-white dark:bg-[#1e293b] hover:bg-[#f1f5f9] dark:hover:bg-[#0f172a] text-[#475569] dark:text-[#94a3b8] font-semibold text-xs px-4.5 py-2.5 rounded-full border border-[#e2e8f0] dark:border-[#334155] shadow-sm transition flex items-center gap-1.5">
+                <i class="fa-solid fa-headphones text-[#0d9488]"></i>Accessoires
             </button>
-            <button onclick="filterCategory('Autres')" id="cat-btn-Autres" class="cat-btn whitespace-nowrap bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-slate-200 dark:border-slate-800 shadow-sm transition flex items-center gap-1.5">
-                <i class="fa-solid fa-box-open text-indigo-500"></i>Autres
+            <button onclick="filterCategory('Autres')" id="cat-btn-Autres" class="cat-btn whitespace-nowrap bg-white dark:bg-[#1e293b] hover:bg-[#f1f5f9] dark:hover:bg-[#0f172a] text-[#475569] dark:text-[#94a3b8] font-semibold text-xs px-4.5 py-2.5 rounded-full border border-[#e2e8f0] dark:border-[#334155] shadow-sm transition flex items-center gap-1.5">
+                <i class="fa-solid fa-box-open text-[#0d9488]"></i>Autres
             </button>
         </div>
     </section>
@@ -158,105 +154,105 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 mt-16 pt-12 pb-8 text-sm border-t border-slate-200 dark:border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-slate-200 dark:border-slate-800">
+    <footer class="bg-white dark:bg-[#1e293b] text-[#64748b] dark:text-[#94a3b8] mt-16 pt-12 pb-8 text-sm border-t border-[#e2e8f0] dark:border-[#334155]">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-[#e2e8f0] dark:border-[#334155]">
             <div>
                 <div class="flex items-center gap-2 mb-3">
-                    <i class="fa-solid fa-laptop-code text-indigo-600 dark:text-indigo-400 text-xl"></i>
-                    <h3 class="text-slate-900 dark:text-white font-extrabold text-lg tracking-wider">SMARTECH</h3>
+                    <i class="fa-solid fa-laptop-code text-[#0d9488] dark:text-teal-400 text-xl"></i>
+                    <h3 class="text-[#0f172a] dark:text-white font-extrabold text-lg tracking-wider">SMARTECH</h3>
                 </div>
-                <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Création de sites web et applications sur mesure.</p>
+                <p class="text-xs text-[#64748b] leading-relaxed">Création de sites web et applications sur mesure.</p>
             </div>
             <div>
                 <div class="flex flex-col mb-3">
-                    <span class="text-slate-900 dark:text-white font-black text-xl tracking-widest uppercase bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-400 dark:to-blue-400 bg-clip-text text-transparent" style="letter-spacing: 0.15em;">MERCAVA</span>
-                    <span class="text-[11px] text-indigo-600 dark:text-indigo-400 font-medium">Matériel informatiques et divers</span>
+                    <span class="text-[#0f172a] dark:text-white font-black text-xl tracking-widest uppercase" style="letter-spacing: 0.15em;">MERCAVA</span>
+                    <span class="text-[11px] text-[#0d9488] dark:text-teal-400 font-medium">Matériel informatiques et divers</span>
                 </div>
-                <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Vente d'ordinateurs de tout genre, matériel informatique, PC gamer, jeux vidéo et accessoires à Abidjan.</p>
+                <p class="text-xs text-[#64748b] leading-relaxed">Vente d'ordinateurs de tout genre, matériel informatique, PC gamer, jeux vidéo et accessoires à Abidjan.</p>
             </div>
             <div>
-                <h4 class="text-slate-900 dark:text-white font-bold text-sm mb-3 flex items-center gap-2"><i class="fa-solid fa-location-dot text-indigo-600 dark:text-indigo-400"></i> Contact & Adresse</h4>
-                <p class="text-xs text-slate-600 dark:text-slate-300 mb-2">YOPOUGON ANANERAI EN FACE DE LA CITE MAMIE ADJOUA</p>
+                <h4 class="text-[#0f172a] dark:text-white font-bold text-sm mb-3 flex items-center gap-2"><i class="fa-solid fa-location-dot text-[#0d9488] dark:text-teal-400"></i> Contact & Adresse</h4>
+                <p class="text-xs text-[#475569] dark:text-[#cbd5e1] mb-2">YOPOUGON ANANERAI EN FACE DE LA CITE MAMIE ADJOUA</p>
                 <p class="text-xs text-green-600 dark:text-green-400 font-bold mb-3">+225 07 09 532 928</p>
-                <a href="https://wa.me/2250709532928" target="_blank" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-sm transition">
+                <a href="https://wa.me/2250709532928" target="_blank" class="inline-flex items-center gap-2 bg-[#0f172a] hover:bg-[#1e293b] dark:bg-teal-600 dark:hover:bg-teal-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-sm transition">
                     <i class="fa-brands fa-whatsapp text-base"></i> Écrire sur WhatsApp
                 </a>
                 
                 <div class="mt-6">
-                    <button onclick="openAdminLogin()" class="text-xs text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition flex items-center gap-1.5">
+                    <button onclick="openAdminLogin()" class="text-xs text-[#94a3b8] hover:text-[#0f172a] dark:hover:text-teal-400 transition flex items-center gap-1.5">
                         <i class="fa-solid fa-lock text-[10px]"></i> Espace Admin
                     </button>
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 pt-6 text-center text-xs text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 pt-6 text-center text-xs text-[#94a3b8]">
             © 2026 MERCAVA (Matériel informatiques et divers) - Yopougon Ananeraie. Tous droits réservés.
         </div>
     </footer>
 
-    <!-- MODAL BIENVENUE & NEWSLETTER -->
-    <div id="welcomeModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
-        <div class="relative bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 rounded-2xl max-w-lg w-full p-6 shadow-xl border border-slate-200 dark:border-slate-800">
-            <button onclick="closeWelcomeModal()" aria-label="Fermer" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 dark:hover:text-white text-2xl font-bold w-9 h-9 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 transition">&times;</button>
+    <!-- MODAL BIENVENUE -->
+    <div id="welcomeModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4">
+        <div class="relative bg-white dark:bg-[#1e293b] text-[#0f172a] dark:text-white rounded-2xl max-w-lg w-full p-6 shadow-xl border border-[#e2e8f0] dark:border-[#334155]">
+            <button onclick="closeWelcomeModal()" aria-label="Fermer" class="absolute top-4 right-4 text-[#94a3b8] hover:text-[#0f172a] dark:hover:text-white text-2xl font-bold w-9 h-9 flex items-center justify-center rounded-full bg-[#f1f5f9] dark:bg-[#0f172a] transition">&times;</button>
             <div class="text-center space-y-3.5">
-                <div class="flex justify-center text-indigo-600 dark:text-indigo-400 text-3xl mb-1">
+                <div class="flex justify-center text-[#0d9488] dark:text-teal-400 text-3xl mb-1">
                     <i class="fa-solid fa-shield-halved"></i>
                 </div>
                 <h3 class="text-2xl font-extrabold">Bienvenue sur MERCAVA</h3>
-                <p class="font-bold text-indigo-600 dark:text-indigo-400 text-sm">Faites vos achats high-tech en toute confiance</p>
-                <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Abonnez-vous à notre newsletter et recevez en exclusivité nos meilleures offres et promos fêtes</p>
-                <div class="text-xs text-slate-600 dark:text-slate-300 bg-slate-50 dark:bg-slate-800 p-3 rounded-xl border border-slate-200 dark:border-slate-700 text-left">
+                <p class="font-bold text-[#0d9488] dark:text-teal-400 text-sm">Faites vos achats high-tech en toute confiance</p>
+                <p class="text-xs text-[#64748b] dark:text-[#94a3b8] leading-relaxed">Abonnez-vous à notre newsletter et recevez en exclusivité nos meilleures offres et promos fêtes</p>
+                <div class="text-xs text-[#475569] dark:text-[#cbd5e1] bg-[#f1f5f9] dark:bg-[#0f172a] p-3 rounded-xl border border-[#e2e8f0] dark:border-[#334155] text-left">
                     Pour vous abonner, veuillez accepter les conditions générales de Mercava.
                 </div>
                 <div class="text-left space-y-2.5 pt-1 text-xs">
                     <label class="flex items-start gap-2.5 cursor-pointer">
-                        <input type="checkbox" id="termsCheck" class="mt-0.5 accent-indigo-600 w-4 h-4 rounded border-slate-300">
-                        <span class="text-slate-600 dark:text-slate-300 leading-tight">J'accepte les conditions légales</span>
+                        <input type="checkbox" id="termsCheck" class="mt-0.5 accent-[#0d9488] w-4 h-4 rounded border-[#cbd5e1]">
+                        <span class="text-[#475569] dark:text-[#cbd5e1] leading-tight">J'accepte les conditions légales</span>
                     </label>
                     <label class="flex items-start gap-2.5 cursor-pointer">
-                        <input type="checkbox" id="privacyCheck" class="mt-0.5 accent-indigo-600 w-4 h-4 rounded border-slate-300">
-                        <span class="text-slate-600 dark:text-slate-300 leading-tight">J'accepte la Politique de confidentialité et des cookies de Mercava.</span>
+                        <input type="checkbox" id="privacyCheck" class="mt-0.5 accent-[#0d9488] w-4 h-4 rounded border-[#cbd5e1]">
+                        <span class="text-[#475569] dark:text-[#cbd5e1] leading-tight">J'accepte la Politique de confidentialité et des cookies de Mercava.</span>
                     </label>
                 </div>
-                <button onclick="subscribeNewsletter()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-xl shadow-md transition transform active:scale-95 text-sm">S'abonner</button>
+                <button onclick="subscribeNewsletter()" class="w-full bg-[#0f172a] hover:bg-[#1e293b] dark:bg-teal-600 dark:hover:bg-teal-700 text-white font-bold py-3 rounded-xl shadow-md transition transform active:scale-95 text-sm">S'abonner</button>
             </div>
         </div>
     </div>
 
     <!-- MODAL CONNEXION ADMIN -->
-    <div id="adminLoginModal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4">
-        <div class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-sm w-full p-6 shadow-xl relative">
-            <button onclick="closeAdminLogin()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xl font-bold">&times;</button>
-            <h3 class="font-extrabold text-base mb-2 flex items-center gap-2"><i class="fa-solid fa-lock text-indigo-600 dark:text-indigo-400"></i> Espace Administrateur</h3>
-            <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Entrez votre mot de passe secret pour gérer vos articles.</p>
+    <div id="adminLoginModal" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm items-center justify-center p-4">
+        <div class="bg-white dark:bg-[#1e293b] text-[#0f172a] dark:text-white border border-[#e2e8f0] dark:border-[#334155] rounded-2xl max-w-sm w-full p-6 shadow-xl relative">
+            <button onclick="closeAdminLogin()" class="absolute top-4 right-4 text-[#94a3b8] hover:text-[#0f172a] dark:hover:text-white text-xl font-bold">&times;</button>
+            <h3 class="font-extrabold text-base mb-2 flex items-center gap-2"><i class="fa-solid fa-lock text-[#0d9488] dark:text-teal-400"></i> Espace Administrateur</h3>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] mb-4">Entrez votre mot de passe secret pour gérer vos articles.</p>
             <div class="space-y-3">
-                <input type="password" id="adminPasswordInput" placeholder="Mot de passe" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-indigo-500">
-                <button onclick="verifyAdminPassword()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 rounded-xl text-sm transition">Se connecter</button>
+                <input type="password" id="adminPasswordInput" placeholder="Mot de passe" class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#cbd5e1] dark:border-[#334155] rounded-xl px-3 py-2 text-sm text-[#0f172a] dark:text-white focus:outline-none focus:border-[#0d9488]">
+                <button onclick="verifyAdminPassword()" class="w-full bg-[#0f172a] hover:bg-[#1e293b] dark:bg-teal-600 text-white font-bold py-2.5 rounded-xl text-sm transition">Se connecter</button>
             </div>
         </div>
     </div>
 
     <!-- TABLEAU DE BORD ADMIN -->
-    <div id="adminDashboardModal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4">
-        <div class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-md w-full p-6 shadow-xl relative">
-            <button onclick="closeAdminDashboard()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xl font-bold">&times;</button>
-            <h3 class="font-extrabold text-lg mb-1 flex items-center gap-2"><i class="fa-solid fa-screwdriver-wrench text-indigo-600 dark:text-indigo-400"></i> Tableau de bord Admin</h3>
-            <p class="text-xs text-slate-500 dark:text-slate-400 mb-6">Que souhaitez-vous faire ?</p>
+    <div id="adminDashboardModal" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm items-center justify-center p-4">
+        <div class="bg-white dark:bg-[#1e293b] text-[#0f172a] dark:text-white border border-[#e2e8f0] dark:border-[#334155] rounded-2xl max-w-md w-full p-6 shadow-xl relative">
+            <button onclick="closeAdminDashboard()" class="absolute top-4 right-4 text-[#94a3b8] hover:text-[#0f172a] dark:hover:text-white text-xl font-bold">&times;</button>
+            <h3 class="font-extrabold text-lg mb-1 flex items-center gap-2"><i class="fa-solid fa-screwdriver-wrench text-[#0d9488] dark:text-teal-400"></i> Tableau de bord Admin</h3>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] mb-6">Que souhaitez-vous faire ?</p>
             
             <div class="space-y-3">
-                <button onclick="openAdminAddFromDashboard()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-xl text-xs transition flex items-center gap-3">
+                <button onclick="openAdminAddFromDashboard()" class="w-full bg-[#0f172a] hover:bg-[#1e293b] dark:bg-teal-600 text-white font-bold py-3 px-4 rounded-xl text-xs transition flex items-center gap-3">
                     <i class="fa-solid fa-circle-plus text-lg"></i>
                     <div class="text-left">
                         <div class="font-bold">Ajouter un nouvel article</div>
-                        <div class="text-[10px] text-indigo-100">Multi-images & prix promo fêtes</div>
+                        <div class="text-[10px] text-teal-200">Multi-images & prix promo fêtes</div>
                     </div>
                 </button>
 
-                <button onclick="openAdminManageFromDashboard()" class="w-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-white font-bold py-3 px-4 rounded-xl text-xs transition flex items-center gap-3">
-                    <i class="fa-solid fa-boxes-stacked text-lg text-indigo-600 dark:text-indigo-400"></i>
+                <button onclick="openAdminManageFromDashboard()" class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] hover:bg-[#e2e8f0] dark:hover:bg-[#334155] border border-[#cbd5e1] dark:border-[#334155] text-[#0f172a] dark:text-white font-bold py-3 px-4 rounded-xl text-xs transition flex items-center gap-3">
+                    <i class="fa-solid fa-boxes-stacked text-lg text-[#0d9488] dark:text-teal-400"></i>
                     <div class="text-left">
                         <div class="font-bold">Gérer, modifier, stock & Supprimer</div>
-                        <div class="text-[10px] text-slate-500 dark:text-slate-400">Modifier, rupture de stock, supprimer un article</div>
+                        <div class="text-[10px] text-[#64748b] dark:text-[#94a3b8]">Modifier, rupture de stock, supprimer un article</div>
                     </div>
                 </button>
             </div>
@@ -264,72 +260,81 @@
     </div>
 
     <!-- MODAL FORMULAIRE AJOUT / MODIFICATION PRODUIT -->
-    <div id="adminAddModal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4 overflow-y-auto">
-        <div class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-xl relative my-auto">
-            <button onclick="closeAdminAdd()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xl font-bold">&times;</button>
+    <div id="adminAddModal" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white dark:bg-[#1e293b] text-[#0f172a] dark:text-white border border-[#e2e8f0] dark:border-[#334155] rounded-2xl max-w-lg w-full p-6 shadow-xl relative my-auto">
+            <button onclick="closeAdminAdd()" class="absolute top-4 right-4 text-[#94a3b8] hover:text-[#0f172a] dark:hover:text-white text-xl font-bold">&times;</button>
             
-            <button onclick="backToAdminDashboard()" class="text-xs text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1.5 mb-3 font-semibold">
+            <button onclick="backToAdminDashboard()" class="text-xs text-[#0d9488] dark:text-teal-400 hover:underline flex items-center gap-1.5 mb-3 font-semibold">
                 <i class="fa-solid fa-arrow-left"></i> Retour au tableau de bord
             </button>
 
-            <h3 id="adminAddModalTitle" class="font-extrabold text-lg mb-1 flex items-center gap-2"><i class="fa-solid fa-plus-circle text-indigo-600 dark:text-indigo-400"></i> Ajouter un nouvel article</h3>
-            <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Remplissez les informations de l'article.</p>
+            <h3 id="adminAddModalTitle" class="font-extrabold text-lg mb-1 flex items-center gap-2"><i class="fa-solid fa-plus-circle text-[#0d9488] dark:text-teal-400"></i> Ajouter un nouvel article</h3>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] mb-4">Remplissez les informations de l'article.</p>
             
             <form id="adminAddForm" onsubmit="handleSaveProduct(event)" class="space-y-3 text-xs">
                 <div>
-                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Nom de l'article *</label>
-                    <input type="text" id="newProdName" required placeholder="Ex: HP ProBook i7..." class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-slate-900 dark:text-white focus:outline-none focus:border-indigo-500">
+                    <label class="block font-semibold text-[#475569] dark:text-[#cbd5e1] mb-1">Nom de l'article *</label>
+                    <input type="text" id="newProdName" required placeholder="Ex: HP ProBook i7..." class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#cbd5e1] dark:border-[#334155] rounded-xl px-3 py-2 text-[#0f172a] dark:text-white focus:outline-none focus:border-[#0d9488]">
                 </div>
                 
                 <div>
-                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Catégories (Cochez une ou plusieurs) *</label>
-                    <div class="grid grid-cols-2 gap-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-3 rounded-xl max-h-36 overflow-y-auto">
-                        <label class="flex items-center gap-2 cursor-pointer text-slate-700 dark:text-slate-200">
-                            <input type="checkbox" name="adminCat" value="Bureautique" class="accent-indigo-600 w-4 h-4 rounded"> Bureautique
+                    <label class="block font-semibold text-[#475569] dark:text-[#cbd5e1] mb-1">Catégories (Cochez une ou plusieurs) *</label>
+                    <div class="grid grid-cols-2 gap-2 bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#cbd5e1] dark:border-[#334155] p-3 rounded-xl max-h-36 overflow-y-auto">
+                        <label class="flex items-center gap-2 cursor-pointer text-[#475569] dark:text-[#cbd5e1]">
+                            <input type="checkbox" name="adminCat" value="Bureautique" class="accent-[#0d9488] w-4 h-4 rounded"> Bureautique
                         </label>
-                        <label class="flex items-center gap-2 cursor-pointer text-slate-700 dark:text-slate-200">
-                            <input type="checkbox" name="adminCat" value="Ordinateurs Portables" class="accent-indigo-600 w-4 h-4 rounded"> PC Portables
+                        <label class="flex items-center gap-2 cursor-pointer text-[#475569] dark:text-[#cbd5e1]">
+                            <input type="checkbox" name="adminCat" value="Ordinateurs Portables" class="accent-[#0d9488] w-4 h-4 rounded"> PC Portables
                         </label>
-                        <label class="flex items-center gap-2 cursor-pointer text-slate-700 dark:text-slate-200">
-                            <input type="checkbox" name="adminCat" value="Ordinateurs Fixes" class="accent-indigo-600 w-4 h-4 rounded"> PC Fixes & Gamer
+                        <label class="flex items-center gap-2 cursor-pointer text-[#475569] dark:text-[#cbd5e1]">
+                            <input type="checkbox" name="adminCat" value="Ordinateurs Fixes" class="accent-[#0d9488] w-4 h-4 rounded"> PC Fixes & Gamer
                         </label>
-                        <label class="flex items-center gap-2 cursor-pointer text-slate-700 dark:text-slate-200">
-                            <input type="checkbox" name="adminCat" value="Composants PC" class="accent-indigo-600 w-4 h-4 rounded"> Composants PC
+                        <label class="flex items-center gap-2 cursor-pointer text-[#475569] dark:text-[#cbd5e1]">
+                            <input type="checkbox" name="adminCat" value="Composants PC" class="accent-[#0d9488] w-4 h-4 rounded"> Composants PC
                         </label>
-                        <label class="flex items-center gap-2 cursor-pointer text-slate-700 dark:text-slate-200">
-                            <input type="checkbox" name="adminCat" value="Jeux Vidéo" class="accent-indigo-600 w-4 h-4 rounded"> Jeux Vidéo
+                        <label class="flex items-center gap-2 cursor-pointer text-[#475569] dark:text-[#cbd5e1]">
+                            <input type="checkbox" name="adminCat" value="Jeux Vidéo" class="accent-[#0d9488] w-4 h-4 rounded"> Jeux Vidéo
                         </label>
-                        <label class="flex items-center gap-2 cursor-pointer text-slate-700 dark:text-slate-200">
-                            <input type="checkbox" name="adminCat" value="Accessoires" class="accent-indigo-600 w-4 h-4 rounded"> Accessoires
+                        <label class="flex items-center gap-2 cursor-pointer text-[#475569] dark:text-[#cbd5e1]">
+                            <input type="checkbox" name="adminCat" value="Accessoires" class="accent-[#0d9488] w-4 h-4 rounded"> Accessoires
                         </label>
-                        <label class="flex items-center gap-2 cursor-pointer text-slate-700 dark:text-slate-200">
-                            <input type="checkbox" name="adminCat" value="Autres" class="accent-indigo-600 w-4 h-4 rounded"> Autres
+                        <label class="flex items-center gap-2 cursor-pointer text-[#475569] dark:text-[#cbd5e1]">
+                            <input type="checkbox" name="adminCat" value="Autres" class="accent-[#0d9488] w-4 h-4 rounded"> Autres
                         </label>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-2 gap-3">
                     <div>
-                        <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Prix Normal (FCFA) *</label>
-                        <input type="number" id="newProdPrice" required placeholder="250000" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-slate-900 dark:text-white focus:outline-none focus:border-indigo-500">
+                        <label class="block font-semibold text-[#475569] dark:text-[#cbd5e1] mb-1">Prix Normal (FCFA) *</label>
+                        <input type="number" id="newProdPrice" required placeholder="250000" class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#cbd5e1] dark:border-[#334155] rounded-xl px-3 py-2 text-[#0f172a] dark:text-white focus:outline-none focus:border-[#0d9488]">
                     </div>
                     <div>
-                        <label class="block font-semibold text-indigo-600 dark:text-indigo-400 mb-1">Prix Promo Fête (Optionnel)</label>
-                        <input type="number" id="newProdPromoPrice" placeholder="Ex: 210000" class="w-full bg-slate-50 dark:bg-slate-800 border border-indigo-300 dark:border-indigo-700 rounded-xl px-3 py-2 text-slate-900 dark:text-white focus:outline-none focus:border-indigo-500">
+                        <label class="block font-semibold text-[#0d9488] dark:text-teal-400 mb-1">Prix Promo Fête (Optionnel)</label>
+                        <input type="number" id="newProdPromoPrice" placeholder="Ex: 210000" class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#0d9488]/40 rounded-xl px-3 py-2 text-[#0f172a] dark:text-white focus:outline-none focus:border-[#0d9488]">
                     </div>
                 </div>
 
+                <!-- SÉLECTEUR DE STOCK DIRECT DANS LE FORMULAIRE -->
                 <div>
-                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Images de l'article (1 ou plusieurs photos)</label>
-                    <input type="file" id="newProdImageFiles" accept="image/*" multiple class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-2 py-1.5 text-slate-900 dark:text-white file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-indigo-600 file:text-white hover:file:opacity-90 cursor-pointer">
-                    <p id="imageHelpText" class="text-[10px] text-slate-500 dark:text-slate-400 mt-1">Maintenez Ctrl pour sélectionner plusieurs angles.</p>
+                    <label class="block font-semibold text-[#475569] dark:text-[#cbd5e1] mb-1">Statut du stock *</label>
+                    <select id="newProdStockStatus" class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#cbd5e1] dark:border-[#334155] rounded-xl px-3 py-2 text-[#0f172a] dark:text-white focus:outline-none focus:border-[#0d9488]">
+                        <option value="true">✅ En stock (Disponible sur le site)</option>
+                        <option value="false">❌ Rupture de stock (Indisponible)</option>
+                    </select>
                 </div>
 
                 <div>
-                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Caractéristiques (séparées par une virgule) *</label>
-                    <input type="text" id="newProdSpecs" required placeholder="Core i5, 16GB RAM, 512SSD" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-slate-900 dark:text-white focus:outline-none focus:border-indigo-500">
+                    <label class="block font-semibold text-[#475569] dark:text-[#cbd5e1] mb-1">Images de l'article (1 ou plusieurs photos)</label>
+                    <input type="file" id="newProdImageFiles" accept="image/*" multiple class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#cbd5e1] dark:border-[#334155] rounded-xl px-2 py-1.5 text-[#0f172a] dark:text-white file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-[#0d9488] file:text-white hover:file:opacity-90 cursor-pointer">
+                    <p id="imageHelpText" class="text-[10px] text-[#64748b] dark:text-[#94a3b8] mt-1">Maintenez Ctrl pour sélectionner plusieurs angles.</p>
                 </div>
-                <button type="submit" id="adminAddSubmitBtn" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-xl shadow-sm transition text-sm mt-2">
+
+                <div>
+                    <label class="block font-semibold text-[#475569] dark:text-[#cbd5e1] mb-1">Caractéristiques (séparées par une virgule) *</label>
+                    <input type="text" id="newProdSpecs" required placeholder="Core i5, 16GB RAM, 512SSD" class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#cbd5e1] dark:border-[#334155] rounded-xl px-3 py-2 text-[#0f172a] dark:text-white focus:outline-none focus:border-[#0d9488]">
+                </div>
+                <button type="submit" id="adminAddSubmitBtn" class="w-full bg-[#0f172a] hover:bg-[#1e293b] dark:bg-teal-600 text-white font-bold py-3 rounded-xl shadow-sm transition text-sm mt-2">
                     Publier l'article maintenant
                 </button>
             </form>
@@ -337,16 +342,16 @@
     </div>
 
     <!-- MODAL GESTION / MODIFICATION / SUPPRESSION & STOCK -->
-    <div id="adminManageModal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4 overflow-y-auto">
-        <div class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-2xl w-full p-6 shadow-xl relative my-auto max-h-[85vh] flex flex-col">
-            <button onclick="closeAdminManage()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xl font-bold">&times;</button>
+    <div id="adminManageModal" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white dark:bg-[#1e293b] text-[#0f172a] dark:text-white border border-[#e2e8f0] dark:border-[#334155] rounded-2xl max-w-2xl w-full p-6 shadow-xl relative my-auto max-h-[85vh] flex flex-col">
+            <button onclick="closeAdminManage()" class="absolute top-4 right-4 text-[#94a3b8] hover:text-[#0f172a] dark:hover:text-white text-xl font-bold">&times;</button>
             
-            <button onclick="backToAdminDashboardFromManage()" class="text-xs text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1.5 mb-3 font-semibold">
+            <button onclick="backToAdminDashboardFromManage()" class="text-xs text-[#0d9488] dark:text-teal-400 hover:underline flex items-center gap-1.5 mb-3 font-semibold">
                 <i class="fa-solid fa-arrow-left"></i> Retour au tableau de bord
             </button>
 
-            <h3 class="font-extrabold text-lg mb-1 flex items-center gap-2"><i class="fa-solid fa-boxes-stacked text-indigo-600 dark:text-indigo-400"></i> Gestion, Modification & Stocks</h3>
-            <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Modifiez un article, changez son stock ou supprimez-le.</p>
+            <h3 class="font-extrabold text-lg mb-1 flex items-center gap-2"><i class="fa-solid fa-boxes-stacked text-[#0d9488] dark:text-teal-400"></i> Gestion, Modification & Stocks</h3>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] mb-4">Modifiez un article, changez son stock ou supprimez-le.</p>
             
             <div id="adminManageList" class="flex-grow overflow-y-auto space-y-3 pr-1">
                 <!-- Dynamique -->
@@ -355,9 +360,9 @@
     </div>
 
     <!-- MODAL DÉTAIL PRODUIT -->
-    <div id="productDetailModal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4 overflow-y-auto">
-        <div class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-3xl w-full p-6 shadow-xl relative my-auto max-h-[90vh] overflow-y-auto">
-            <button onclick="closeProductDetailModal()" aria-label="Fermer" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 dark:hover:text-white text-2xl font-bold w-9 h-9 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 transition z-20">&times;</button>
+    <div id="productDetailModal" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white dark:bg-[#1e293b] text-[#0f172a] dark:text-white border border-[#e2e8f0] dark:border-[#334155] rounded-2xl max-w-3xl w-full p-6 shadow-xl relative my-auto max-h-[90vh] overflow-y-auto">
+            <button onclick="closeProductDetailModal()" aria-label="Fermer" class="absolute top-4 right-4 text-[#94a3b8] hover:text-[#0f172a] dark:hover:text-white text-2xl font-bold w-9 h-9 flex items-center justify-center rounded-full bg-[#f1f5f9] dark:bg-[#0f172a] transition z-20">&times;</button>
             <div id="productDetailContent"></div>
         </div>
     </div>
@@ -366,27 +371,27 @@
     <div id="imageLightboxModal" class="fixed inset-0 z-[60] hidden bg-black/90 backdrop-blur-md items-center justify-center p-4">
         <button onclick="closeLightbox()" aria-label="Fermer" class="absolute top-6 right-6 text-white text-3xl font-bold w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition z-50">&times;</button>
         <div class="relative max-w-4xl max-h-[90vh] flex items-center justify-center">
-            <img id="lightboxImg" src="" alt="Vue agrandie" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl border border-slate-700">
+            <img id="lightboxImg" src="" alt="Vue agrandie" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl border border-[#334155]">
         </div>
     </div>
 
     <!-- PANIER DRAWER -->
-    <div id="cartDrawer" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm justify-end">
-        <div class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 border-l border-slate-200 dark:border-slate-800 w-full max-w-md h-full shadow-2xl flex flex-col justify-between transform transition-transform">
-            <div class="p-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-center bg-slate-50 dark:bg-slate-950 relative">
+    <div id="cartDrawer" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm justify-end">
+        <div class="bg-white dark:bg-[#1e293b] text-[#0f172a] dark:text-white border-l border-[#e2e8f0] dark:border-[#334155] w-full max-w-md h-full shadow-2xl flex flex-col justify-between transform transition-transform">
+            <div class="p-4 border-b border-[#e2e8f0] dark:border-[#334155] flex items-center justify-center bg-[#f8fafc] dark:bg-[#0f172a] relative">
                 <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-cart-shopping text-indigo-600 dark:text-indigo-400"></i>
+                    <i class="fa-solid fa-cart-shopping text-[#0d9488] dark:text-teal-400"></i>
                     <h3 class="font-extrabold text-base">Mon Panier MERCAVA</h3>
                 </div>
-                <button onclick="closeCartDrawer()" class="absolute right-4 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xl font-bold px-2">&times;</button>
+                <button onclick="closeCartDrawer()" class="absolute right-4 text-[#94a3b8] hover:text-[#0f172a] dark:hover:text-white text-xl font-bold px-2">&times;</button>
             </div>
             <div id="cartItemsContainer" class="flex-grow overflow-y-auto p-4 space-y-3"></div>
-            <div class="p-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 space-y-3">
+            <div class="p-4 border-t border-[#e2e8f0] dark:border-[#334155] bg-[#f8fafc] dark:bg-[#0f172a] space-y-3">
                 <div class="flex justify-between items-center text-sm font-bold">
-                    <span class="text-slate-600 dark:text-slate-300">Total commande :</span>
-                    <span id="cartTotalPrice" class="text-indigo-600 dark:text-indigo-400 text-lg">0 FCFA</span>
+                    <span class="text-[#475569] dark:text-[#94a3b8]">Total commande :</span>
+                    <span id="cartTotalPrice" class="text-[#0d9488] dark:text-teal-400 text-lg">0 FCFA</span>
                 </div>
-                <button onclick="openCheckoutModal()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-xl shadow-md transition text-sm flex items-center justify-center gap-2">
+                <button onclick="openCheckoutModal()" class="w-full bg-[#0f172a] hover:bg-[#1e293b] dark:bg-teal-600 text-white font-bold py-3 rounded-xl shadow-md transition text-sm flex items-center justify-center gap-2">
                     <i class="fa-solid fa-bag-shopping"></i> Valider la commande
                 </button>
             </div>
@@ -394,52 +399,52 @@
     </div>
 
     <!-- MODAL CHECKOUT -->
-    <div id="checkoutModal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm items-center justify-center p-4 overflow-y-auto">
-        <div class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-md w-full p-6 shadow-xl relative my-auto">
-            <button onclick="closeCheckoutModal()" aria-label="Fermer" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 dark:hover:text-white text-2xl font-bold w-9 h-9 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 transition">&times;</button>
-            <h3 class="font-extrabold text-lg mb-1 flex items-center gap-2"><i class="fa-solid fa-receipt text-indigo-600 dark:text-indigo-400"></i> Finaliser votre commande</h3>
-            <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Renseignez vos informations et choisissez votre mode de paiement.</p>
+    <div id="checkoutModal" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white dark:bg-[#1e293b] text-[#0f172a] dark:text-white border border-[#e2e8f0] dark:border-[#334155] rounded-2xl max-w-md w-full p-6 shadow-xl relative my-auto">
+            <button onclick="closeCheckoutModal()" aria-label="Fermer" class="absolute top-4 right-4 text-[#94a3b8] hover:text-[#0f172a] dark:hover:text-white text-2xl font-bold w-9 h-9 flex items-center justify-center rounded-full bg-[#f1f5f9] dark:bg-[#0f172a] transition">&times;</button>
+            <h3 class="font-extrabold text-lg mb-1 flex items-center gap-2"><i class="fa-solid fa-receipt text-[#0d9488] dark:text-teal-400"></i> Finaliser votre commande</h3>
+            <p class="text-xs text-[#64748b] dark:text-[#94a3b8] mb-4">Renseignez vos informations et choisissez votre mode de paiement.</p>
             
             <form onsubmit="checkoutToWhatsApp(event)" class="space-y-3 text-sm">
                 <div>
-                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Nom complet *</label>
-                    <input type="text" id="clientName" required placeholder="Ex: Kouadio Jean" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-indigo-500">
+                    <label class="block text-xs font-semibold text-[#475569] dark:text-[#cbd5e1] mb-1">Nom complet *</label>
+                    <input type="text" id="clientName" required placeholder="Ex: Kouadio Jean" class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#e2e8f0] dark:border-[#334155] rounded-xl px-3 py-2 text-[#0f172a] dark:text-white placeholder-[#94a3b8] focus:outline-none focus:border-[#0d9488]">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Quartier / Adresse de livraison *</label>
-                    <input type="text" id="clientQuartier" required placeholder="Ex: Yopougon Ananerai / Abidjan" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-indigo-500">
+                    <label class="block text-xs font-semibold text-[#475569] dark:text-[#cbd5e1] mb-1">Quartier / Adresse de livraison *</label>
+                    <input type="text" id="clientQuartier" required placeholder="Ex: Yopougon Ananerai / Abidjan" class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#e2e8f0] dark:border-[#334155] rounded-xl px-3 py-2 text-[#0f172a] dark:text-white placeholder-[#94a3b8] focus:outline-none focus:border-[#0d9488]">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Téléphone (WhatsApp) *</label>
-                    <input type="tel" id="clientPhone" required placeholder="Ex: 0700000000" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-indigo-500">
+                    <label class="block text-xs font-semibold text-[#475569] dark:text-[#cbd5e1] mb-1">Téléphone (WhatsApp) *</label>
+                    <input type="tel" id="clientPhone" required placeholder="Ex: 0700000000" class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#e2e8f0] dark:border-[#334155] rounded-xl px-3 py-2 text-[#0f172a] dark:text-white placeholder-[#94a3b8] focus:outline-none focus:border-[#0d9488]">
                 </div>
 
                 <!-- SÉLECTION DU MODE DE PAIEMENT -->
                 <div>
-                    <label class="block text-xs font-semibold text-indigo-600 dark:text-indigo-400 mb-1.5"><i class="fa-solid fa-wallet"></i> Moyen de paiement souhaité *</label>
+                    <label class="block text-xs font-semibold text-[#0d9488] dark:text-teal-400 mb-1.5"><i class="fa-solid fa-wallet"></i> Moyen de paiement souhaité *</label>
                     <div class="grid grid-cols-2 gap-2">
-                        <label class="flex items-center gap-2.5 p-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl cursor-pointer hover:border-indigo-500 transition">
-                            <input type="radio" name="paymentMethod" value="Wave" required class="accent-indigo-600">
+                        <label class="flex items-center gap-2.5 p-2.5 bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#e2e8f0] dark:border-[#334155] rounded-xl cursor-pointer hover:border-[#0d9488] transition">
+                            <input type="radio" name="paymentMethod" value="Wave" required class="accent-[#0d9488]">
                             <span class="text-xs font-bold flex items-center gap-1.5">
-                                <i class="fa-solid fa-water text-cyan-500"></i> Wave
+                                <i class="fa-solid fa-water text-cyan-600"></i> Wave
                             </span>
                         </label>
-                        <label class="flex items-center gap-2.5 p-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl cursor-pointer hover:border-indigo-500 transition">
-                            <input type="radio" name="paymentMethod" value="Orange Money" class="accent-indigo-600">
+                        <label class="flex items-center gap-2.5 p-2.5 bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#e2e8f0] dark:border-[#334155] rounded-xl cursor-pointer hover:border-[#0d9488] transition">
+                            <input type="radio" name="paymentMethod" value="Orange Money" class="accent-[#0d9488]">
                             <span class="text-xs font-bold flex items-center gap-1.5">
                                 <i class="fa-solid fa-circle text-orange-500 text-[8px]"></i> Orange Money
                             </span>
                         </label>
-                        <label class="flex items-center gap-2.5 p-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl cursor-pointer hover:border-indigo-500 transition">
-                            <input type="radio" name="paymentMethod" value="MTN MoMo" class="accent-indigo-600">
+                        <label class="flex items-center gap-2.5 p-2.5 bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#e2e8f0] dark:border-[#334155] rounded-xl cursor-pointer hover:border-[#0d9488] transition">
+                            <input type="radio" name="paymentMethod" value="MTN MoMo" class="accent-[#0d9488]">
                             <span class="text-xs font-bold flex items-center gap-1.5">
                                 <i class="fa-solid fa-circle text-yellow-500 text-[8px]"></i> MTN MoMo
                             </span>
                         </label>
-                        <label class="flex items-center gap-2.5 p-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl cursor-pointer hover:border-indigo-500 transition">
-                            <input type="radio" name="paymentMethod" value="Paiement à la livraison" class="accent-indigo-600">
+                        <label class="flex items-center gap-2.5 p-2.5 bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#e2e8f0] dark:border-[#334155] rounded-xl cursor-pointer hover:border-[#0d9488] transition">
+                            <input type="radio" name="paymentMethod" value="Paiement à la livraison" class="accent-[#0d9488]">
                             <span class="text-xs font-bold flex items-center gap-1.5">
-                                <i class="fa-solid fa-hand-holding-dollar text-green-500"></i> À la livraison
+                                <i class="fa-solid fa-hand-holding-dollar text-green-600"></i> À la livraison
                             </span>
                         </label>
                     </div>
@@ -453,8 +458,8 @@
     </div>
 
     <!-- TOAST NOTIFICATION -->
-    <div id="toastNotification" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 text-white border border-slate-800 text-xs px-4 py-3 rounded-xl shadow-xl flex items-center gap-2">
-        <i class="fa-solid fa-circle-check text-indigo-400"></i>
+    <div id="toastNotification" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-[#0f172a] text-white border border-[#334155] text-xs px-4 py-3 rounded-xl shadow-xl flex items-center gap-2">
+        <i class="fa-solid fa-circle-check text-teal-400"></i>
         <span id="toastText">Action effectuée</span>
     </div>
 
@@ -467,7 +472,7 @@
                 price: 280000,
                 promoPrice: 259000,
                 inStock: true,
-                images: ['https://placehold.co/600x400/e2e8f0/1e293b?text=HP+Bureautique+1', 'https://placehold.co/600x400/e2e8f0/1e293b?text=HP+Bureautique+2', 'https://placehold.co/600x400/e2e8f0/1e293b?text=HP+Bureautique+3'],
+                images: ['https://placehold.co/600x400/f1f5f9/334155?text=HP+Bureautique+1', 'https://placehold.co/600x400/f1f5f9/334155?text=HP+Bureautique+2', 'https://placehold.co/600x400/f1f5f9/334155?text=HP+Bureautique+3'],
                 capacities: ['Processeur : Intel Core i5 12e gén', 'RAM : 16GB DDR4', 'Stockage : 512GB SSD', 'Idéal pour comptabilité, bureautique, cours']
             },
             {
@@ -477,7 +482,7 @@
                 price: 850000,
                 promoPrice: null,
                 inStock: true,
-                images: ['https://placehold.co/600x400/e2e8f0/1e293b?text=PC+Fixe+1', 'https://placehold.co/600x400/1e293b?text=PC+Fixe+2'],
+                images: ['https://placehold.co/600x400/f1f5f9/334155?text=PC+Fixe+1', 'https://placehold.co/600x400/f1f5f9/334155?text=PC+Fixe+2'],
                 capacities: ['Processeur : Intel Core i9', 'Carte Graphique : NVIDIA RTX 4070', 'RAM : 64GB RGB', 'Idéal Gaming extrême & Création']
             },
             {
@@ -487,7 +492,7 @@
                 price: 450000,
                 promoPrice: 420000,
                 inStock: true,
-                images: ['https://placehold.co/600x400/e2e8f0/1e293b?text=MSI+1', 'https://placehold.co/600x400/e2e8f0/1e293b?text=MSI+2'],
+                images: ['https://placehold.co/600x400/f1f5f9/334155?text=MSI+1', 'https://placehold.co/600x400/f1f5f9/334155?text=MSI+2'],
                 capacities: ['Processeur : AMD Ryzen 7', 'RAM : 16GB', 'Stockage : 512GB SSD', 'Clavier rétroéclairé']
             },
             {
@@ -497,7 +502,7 @@
                 price: 649000,
                 promoPrice: null,
                 inStock: true,
-                images: ['https://placehold.co/600x400/e2e8f0/1e293b?text=Victus+1', 'https://placehold.co/600x400/1e293b?text=Victus+2'],
+                images: ['https://placehold.co/600x400/f1f5f9/334155?text=Victus+1', 'https://placehold.co/600x400/f1f5f9/334155?text=Victus+2'],
                 capacities: ['Écran : 15.6" FHD 144Hz', 'GPU : RTX 4050 6GB', 'RAM : 16GB DDR5']
             },
             {
@@ -507,7 +512,7 @@
                 price: 250000,
                 promoPrice: null,
                 inStock: false,
-                images: ['https://placehold.co/600x400/e2e8f0/1e293b?text=RTX+4060'],
+                images: ['https://placehold.co/600x400/f1f5f9/334155?text=RTX+4060'],
                 capacities: ['VRAM : 8GB GDDR6', 'DLSS 3.5']
             },
             {
@@ -517,7 +522,7 @@
                 price: 38000,
                 promoPrice: 32000,
                 inStock: true,
-                images: ['https://placehold.co/600x400/e2e8f0/1e293b?text=FC25+1', 'https://placehold.co/600x400/1e293b?text=FC25+2'],
+                images: ['https://placehold.co/600x400/f1f5f9/334155?text=FC25+1', 'https://placehold.co/600x400/f1f5f9/334155?text=FC25+2'],
                 capacities: ['Plateforme : PS5 Physique', 'Langue : Français']
             },
             {
@@ -527,7 +532,7 @@
                 price: 32000,
                 promoPrice: null,
                 inStock: true,
-                images: ['https://placehold.co/600x400/e2e8f0/1e293b?text=Clavier+1'],
+                images: ['https://placehold.co/600x400/f1f5f9/334155?text=Clavier+1'],
                 capacities: ['Switches Red', 'RGB personnalisable']
             },
             {
@@ -537,7 +542,7 @@
                 price: 15000,
                 promoPrice: null,
                 inStock: true,
-                images: ['https://placehold.co/600x400/e2e8f0/1e293b?text=Multiprise'],
+                images: ['https://placehold.co/600x400/f1f5f9/334155?text=Multiprise'],
                 capacities: ['Protection surtension', 'Norme pro']
             }
         ];
@@ -548,7 +553,7 @@
         let productEdits = JSON.parse(localStorage.getItem('mercava_product_edits')) || {};
         let editingProductId = null;
 
-        // GESTION DU THÉME CLAIR / SOMBRE
+        // GESTION DU THÈME CLAIR / SOMBRE
         function toggleTheme() {
             const html = document.documentElement;
             const themeIcon = document.getElementById('themeIcon');
@@ -561,11 +566,10 @@
                 html.classList.remove('light');
                 html.classList.add('dark');
                 localStorage.setItem('mercava_theme', 'dark');
-                themeIcon.className = 'fa-solid fa-sun text-sm text-yellow-400';
+                themeIcon.className = 'fa-solid fa-sun text-sm text-teal-400';
             }
         }
 
-        // Charger le thème enregistré au démarrage
         document.addEventListener('DOMContentLoaded', () => {
             const savedTheme = localStorage.getItem('mercava_theme') || 'light';
             const html = document.documentElement;
@@ -573,7 +577,7 @@
             if(savedTheme === 'dark') {
                 html.classList.remove('light');
                 html.classList.add('dark');
-                if(themeIcon) themeIcon.className = 'fa-solid fa-sun text-sm text-yellow-400';
+                if(themeIcon) themeIcon.className = 'fa-solid fa-sun text-sm text-teal-400';
             } else {
                 html.classList.remove('dark');
                 html.classList.add('light');
@@ -584,7 +588,6 @@
             updateCartUI();
         });
 
-        // Variables pour le carrousel tactile
         let currentModalImages = [];
         let currentModalImageIndex = 0;
         let touchstartX = 0;
@@ -664,6 +667,7 @@
             document.getElementById('newProdImageFiles').required = true;
             document.getElementById('imageHelpText').textContent = "Maintenez Ctrl pour sélectionner plusieurs angles.";
             document.getElementById('adminAddForm').reset();
+            document.getElementById('newProdStockStatus').value = "true";
             document.getElementById('adminAddModal').style.display = 'flex';
         }
 
@@ -705,6 +709,7 @@
             document.getElementById('newProdPrice').value = product.price;
             document.getElementById('newProdPromoPrice').value = (product.promoPrice !== null && product.promoPrice !== undefined) ? product.promoPrice : '';
             document.getElementById('newProdSpecs').value = product.capacities ? product.capacities.join(', ') : '';
+            document.getElementById('newProdStockStatus').value = product.inStock !== false ? "true" : "false";
 
             document.querySelectorAll('input[name="adminCat"]').forEach(cb => {
                 cb.checked = product.categories && product.categories.includes(cb.value);
@@ -729,6 +734,7 @@
             const price = Number(document.getElementById('newProdPrice').value);
             const promoInput = document.getElementById('newProdPromoPrice').value;
             const promoPrice = promoInput ? Number(promoInput) : null;
+            const inStockVal = document.getElementById('newProdStockStatus').value === "true";
             
             const specsStr = document.getElementById('newProdSpecs').value;
             const capacities = specsStr.split(',').map(s => s.trim()).filter(s => s.length > 0);
@@ -737,6 +743,9 @@
             const files = fileInput.files;
 
             const processSave = (imagesArray) => {
+                stockStatusOverrides[editingProductId !== null ? editingProductId : 'new'] = inStockVal;
+                localStorage.setItem('mercava_stock_overrides', JSON.stringify(stockStatusOverrides));
+
                 if(editingProductId !== null) {
                     const existingProd = getUnifiedProducts().find(p => p.id === editingProductId);
                     const finalImages = (imagesArray && imagesArray.length > 0) ? imagesArray : (existingProd ? existingProd.images : ['https://placehold.co/600x400']);
@@ -749,6 +758,7 @@
                             categories: checkedCategories,
                             price,
                             promoPrice,
+                            inStock: inStockVal,
                             images: finalImages,
                             capacities: capacities.length > 0 ? capacities : ['Garantie incluse']
                         };
@@ -759,6 +769,7 @@
                             categories: checkedCategories,
                             price,
                             promoPrice,
+                            inStock: inStockVal,
                             images: finalImages,
                             capacities: capacities.length > 0 ? capacities : ['Garantie incluse']
                         };
@@ -771,13 +782,17 @@
                         showToast("Veuillez sélectionner au moins une image !");
                         return;
                     }
+                    const newId = Date.now();
+                    stockStatusOverrides[newId] = inStockVal;
+                    localStorage.setItem('mercava_stock_overrides', JSON.stringify(stockStatusOverrides));
+
                     const newProduct = {
-                        id: Date.now(),
+                        id: newId,
                         name,
                         categories: checkedCategories,
                         price,
                         promoPrice,
-                        inStock: true,
+                        inStock: inStockVal,
                         images: imagesArray,
                         capacities: capacities.length > 0 ? capacities : ['Garantie incluse']
                     };
@@ -819,7 +834,7 @@
             const allProds = getUnifiedProducts();
 
             if(allProds.length === 0) {
-                listContainer.innerHTML = `<div class="text-center py-8 text-slate-400 text-xs">Aucun article enregistré.</div>`;
+                listContainer.innerHTML = `<div class="text-center py-8 text-[#94a3b8] text-xs">Aucun article enregistré.</div>`;
                 return;
             }
 
@@ -827,25 +842,25 @@
                 const cover = p.images && p.images.length > 0 ? p.images[0] : '';
                 const isOut = p.inStock === false;
                 return `
-                    <div class="bg-slate-50 dark:bg-slate-800 p-3 rounded-xl border border-slate-200 dark:border-slate-700 flex items-center justify-between gap-3">
+                    <div class="bg-[#f8fafc] dark:bg-[#0f172a] p-3 rounded-xl border border-[#e2e8f0] dark:border-[#334155] flex items-center justify-between gap-3">
                         <div class="flex items-center gap-3 min-w-0">
-                            <img src="${cover}" class="w-12 h-12 object-cover rounded-lg flex-shrink-0 border border-slate-200 dark:border-slate-700">
+                            <img src="${cover}" class="w-12 h-12 object-cover rounded-lg flex-shrink-0 border border-[#e2e8f0] dark:border-[#334155]">
                             <div class="min-w-0">
                                 <h4 class="text-xs font-bold truncate">${p.name}</h4>
-                                <div class="text-[11px] text-indigo-600 dark:text-indigo-400 font-semibold">${p.price.toLocaleString()} FCFA ${p.promoPrice ? `<span class="text-slate-400 line-through ml-1">${p.promoPrice}</span>` : ''}</div>
+                                <div class="text-[11px] text-[#0d9488] dark:text-teal-400 font-semibold">${p.price.toLocaleString()} FCFA ${p.promoPrice ? `<span class="text-[#94a3b8] line-through ml-1">${p.promoPrice}</span>` : ''}</div>
                                 <span class="inline-block mt-1 text-[10px] px-2 py-0.5 rounded font-bold ${isOut ? 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-400 border border-red-200 dark:border-red-800' : 'bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-400 border border-green-200 dark:border-green-800'}">
                                     ${isOut ? 'Rupture de stock' : 'En stock'}
                                 </span>
                             </div>
                         </div>
                         <div class="flex items-center gap-1.5 flex-shrink-0">
-                            <button onclick="openAdminEdit(${p.id})" class="bg-blue-50 dark:bg-blue-900/40 hover:bg-blue-100 dark:hover:bg-blue-900 text-blue-600 dark:text-blue-300 text-xs px-2.5 py-1.5 rounded-lg border border-blue-200 dark:border-blue-800 transition" title="Modifier">
+                            <button onclick="openAdminEdit(${p.id})" class="bg-blue-50 dark:bg-blue-900/40 hover:bg-blue-100 dark:hover:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-2.5 py-1.5 rounded-lg border border-blue-200 dark:border-blue-800 transition" title="Modifier">
                                 <i class="fa-solid fa-pen-to-square"></i>
                             </button>
-                            <button onclick="toggleProductStock(${p.id})" class="bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 text-xs px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 transition" title="Stock">
+                            <button onclick="toggleProductStock(${p.id})" class="bg-white dark:bg-[#1e293b] hover:bg-[#f1f5f9] dark:hover:bg-[#334155] text-[#475569] dark:text-white text-xs px-2.5 py-1.5 rounded-lg border border-[#e2e8f0] dark:border-[#334155] transition" title="Changer le statut stock">
                                 <i class="fa-solid fa-arrows-rotate"></i>
                             </button>
-                            <button onclick="deleteProduct(${p.id})" class="bg-red-50 dark:bg-red-900/40 hover:bg-red-100 dark:hover:bg-red-900 text-red-600 dark:text-red-300 text-xs px-2.5 py-1.5 rounded-lg border border-red-200 dark:border-red-800 transition" title="Supprimer">
+                            <button onclick="deleteProduct(${p.id})" class="bg-red-50 dark:bg-red-900/40 hover:bg-red-100 dark:hover:bg-red-900 text-red-700 dark:text-red-300 text-xs px-2.5 py-1.5 rounded-lg border border-red-200 dark:border-red-800 transition" title="Supprimer">
                                 <i class="fa-solid fa-trash"></i>
                             </button>
                         </div>
@@ -887,11 +902,11 @@
         function filterCategory(cat) {
             currentCategory = cat;
             document.querySelectorAll('.cat-btn').forEach(btn => {
-                btn.className = 'cat-btn whitespace-nowrap bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-xs px-4.5 py-2.5 rounded-full border border-slate-200 dark:border-slate-800 shadow-sm transition flex items-center gap-1.5';
+                btn.className = 'cat-btn whitespace-nowrap bg-white dark:bg-[#1e293b] hover:bg-[#f1f5f9] dark:hover:bg-[#0f172a] text-[#475569] dark:text-[#94a3b8] font-semibold text-xs px-4.5 py-2.5 rounded-full border border-[#e2e8f0] dark:border-[#334155] shadow-sm transition flex items-center gap-1.5';
             });
             const activeBtn = document.getElementById(`cat-btn-${cat}`);
             if(activeBtn) {
-                activeBtn.className = 'cat-btn whitespace-nowrap bg-indigo-600 text-white font-bold text-xs px-4.5 py-2.5 rounded-full shadow transition flex items-center gap-1.5';
+                activeBtn.className = 'cat-btn whitespace-nowrap bg-[#0f172a] dark:bg-teal-600 text-white font-bold text-xs px-4.5 py-2.5 rounded-full shadow transition flex items-center gap-1.5';
             }
             renderProducts();
         }
@@ -910,7 +925,7 @@
             });
 
             if(filtered.length === 0) {
-                grid.innerHTML = `<div class="col-span-full text-center py-12 text-slate-400 text-sm">Aucun article trouvé pour cette recherche.</div>`;
+                grid.innerHTML = `<div class="col-span-full text-center py-12 text-[#94a3b8] text-sm">Aucun article trouvé pour cette recherche.</div>`;
                 return;
             }
 
@@ -923,39 +938,39 @@
                 if(p.promoPrice && p.promoPrice < p.price) {
                     priceHtml = `
                         <div class="flex items-center gap-2 flex-wrap">
-                            <span class="font-extrabold text-sm sm:text-base text-indigo-600 dark:text-indigo-400">${p.promoPrice.toLocaleString()} FCFA</span>
-                            <span class="text-xs text-slate-400 line-through">${p.price.toLocaleString()} FCFA</span>
+                            <span class="font-extrabold text-sm sm:text-base text-[#0d9488] dark:text-teal-400">${p.promoPrice.toLocaleString()} FCFA</span>
+                            <span class="text-xs text-[#94a3b8] line-through">${p.price.toLocaleString()} FCFA</span>
                         </div>
                     `;
                 } else {
-                    priceHtml = `<div class="font-extrabold text-sm sm:text-base text-indigo-600 dark:text-indigo-400">${p.price.toLocaleString()} FCFA</div>`;
+                    priceHtml = `<div class="font-extrabold text-sm sm:text-base text-[#0d9488] dark:text-teal-400">${p.price.toLocaleString()} FCFA</div>`;
                 }
 
                 return `
-                <div class="bg-white dark:bg-slate-900 border ${isOut ? 'border-red-200 dark:border-red-900/50 opacity-75' : 'border-slate-200 dark:border-slate-800 hover:border-indigo-500'} rounded-2xl overflow-hidden shadow-sm transition flex flex-col justify-between group">
+                <div class="bg-white dark:bg-[#1e293b] border ${isOut ? 'border-red-200 dark:border-red-900/50 opacity-75' : 'border-[#e2e8f0] dark:border-[#334155] hover:border-[#0d9488]'} rounded-2xl overflow-hidden shadow-sm transition flex flex-col justify-between group">
                     <div class="cursor-pointer relative" onclick="openProductDetailModal(${p.id})">
-                        <div class="aspect-video bg-slate-100 dark:bg-slate-950 overflow-hidden relative">
+                        <div class="aspect-video bg-[#f8fafc] dark:bg-[#0f172a] overflow-hidden relative">
                             <img src="${coverImage}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                            <span class="absolute top-2 left-2 bg-white/90 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 text-[10px] font-bold px-2 py-0.5 rounded-full backdrop-blur-sm">${primaryCat}</span>
+                            <span class="absolute top-2 left-2 bg-white/90 dark:bg-[#1e293b]/90 border border-[#e2e8f0] dark:border-[#334155] text-[#475569] dark:text-[#94a3b8] text-[10px] font-bold px-2 py-0.5 rounded-full backdrop-blur-sm">${primaryCat}</span>
                             
-                            ${isOut ? `<div class="absolute inset-0 bg-black/60 backdrop-blur-[2px] flex items-center justify-center"><span class="bg-red-600 text-white font-extrabold text-[11px] px-3 py-1 rounded-lg uppercase tracking-wider shadow">Rupture de stock</span></div>` : ''}
+                            ${isOut ? `<div class="absolute inset-0 bg-black/60 backdrop-blur-[2px] flex items-center justify-center"><span class="bg-red-700 text-white font-extrabold text-[11px] px-3 py-1 rounded-lg uppercase tracking-wider shadow">Rupture de stock</span></div>` : ''}
                             
                             ${p.images && p.images.length > 1 && !isOut ? `<span class="absolute bottom-2 right-2 bg-black/60 text-white text-[9px] px-1.5 py-0.5 rounded flex items-center gap-1"><i class="fa-solid fa-images"></i> ${p.images.length}</span>` : ''}
                             
-                            ${p.promoPrice && p.promoPrice < p.price && !isOut ? `<span class="absolute bottom-2 left-2 bg-indigo-600 text-white text-[10px] font-black px-2 py-0.5 rounded shadow">PROMO FÊTES</span>` : ''}
+                            ${p.promoPrice && p.promoPrice < p.price && !isOut ? `<span class="absolute bottom-2 left-2 bg-[#0d9488] dark:bg-teal-600 text-white text-[10px] font-black px-2 py-0.5 rounded shadow">PROMO FÊTES</span>` : ''}
                         </div>
                         <div class="p-4">
-                            <h3 class="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 line-clamp-2 h-9">${p.name}</h3>
+                            <h3 class="text-xs sm:text-sm font-semibold text-[#1e293b] dark:text-[#cbd5e1] line-clamp-2 h-9">${p.name}</h3>
                             <div class="mt-2">${priceHtml}</div>
                         </div>
                     </div>
                     <div class="px-4 pb-4 pt-0">
                         ${isOut ? `
-                            <button disabled class="w-full bg-slate-100 dark:bg-slate-800 text-slate-400 text-xs font-bold py-2.5 rounded-lg cursor-not-allowed flex items-center justify-center gap-1.5 border border-slate-200 dark:border-slate-700">
+                            <button disabled class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] text-[#94a3b8] text-xs font-bold py-2.5 rounded-lg cursor-not-allowed flex items-center justify-center gap-1.5 border border-[#e2e8f0] dark:border-[#334155]">
                                 <i class="fa-solid fa-ban"></i> Indisponible
                             </button>
                         ` : `
-                            <button onclick="addToCart(${p.id})" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold py-2.5 rounded-xl shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5">
+                            <button onclick="addToCart(${p.id})" class="w-full bg-[#0f172a] hover:bg-[#1e293b] dark:bg-teal-600 dark:hover:bg-teal-700 text-white text-xs font-bold py-2.5 rounded-xl shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5">
                                 <i class="fa-solid fa-cart-plus"></i> Ajouter au panier
                             </button>
                         `}
@@ -979,22 +994,22 @@
             if(product.promoPrice && product.promoPrice < product.price) {
                 priceHtml = `
                     <div class="flex items-center gap-3 mt-3">
-                        <span class="text-xl sm:text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">${product.promoPrice.toLocaleString()} FCFA</span>
-                        <span class="text-sm text-slate-400 line-through">${product.price.toLocaleString()} FCFA</span>
-                        <span class="bg-indigo-600 text-white text-[10px] font-black px-2 py-0.5 rounded">PRIX PROMO FÊTES</span>
+                        <span class="text-xl sm:text-2xl font-extrabold text-[#0d9488] dark:text-teal-400">${product.promoPrice.toLocaleString()} FCFA</span>
+                        <span class="text-sm text-[#94a3b8] line-through">${product.price.toLocaleString()} FCFA</span>
+                        <span class="bg-[#0d9488] dark:bg-teal-600 text-white text-[10px] font-black px-2 py-0.5 rounded">PRIX PROMO FÊTES</span>
                     </div>
                 `;
             } else {
-                priceHtml = `<div class="text-xl sm:text-2xl font-extrabold text-indigo-600 dark:text-indigo-400 mt-3">${product.price.toLocaleString()} FCFA</div>`;
+                priceHtml = `<div class="text-xl sm:text-2xl font-extrabold text-[#0d9488] dark:text-teal-400 mt-3">${product.price.toLocaleString()} FCFA</div>`;
             }
 
             const content = document.getElementById('productDetailContent');
             content.innerHTML = `
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                        <!-- CONTENEUR PRINCIPAL AVEC SUPPORT DU GLISSEMENT (SWIPE) GAUCHE / DROITE -->
+                        <!-- CONTENEUR PRINCIPAL AVEC SUPPORT DU GLISSEMENT (SWIPE) -->
                         <div id="modalImageContainer" 
-                             class="aspect-video bg-slate-100 dark:bg-slate-950 rounded-2xl overflow-hidden mb-3 border border-slate-200 dark:border-slate-800 relative cursor-grab active:cursor-grabbing select-none group"
+                             class="aspect-video bg-[#f8fafc] dark:bg-[#0f172a] rounded-2xl overflow-hidden mb-3 border border-[#e2e8f0] dark:border-[#334155] relative cursor-grab active:cursor-grabbing select-none group"
                              ontouchstart="touchstartX = event.changedTouches[0].screenX"
                              ontouchend="touchendX = event.changedTouches[0].screenX; handleModalSwipe()"
                              onmousedown="touchstartX = event.clientX"
@@ -1002,42 +1017,42 @@
                             
                             <img id="activeDetailImg" src="${currentModalImages[0]}" alt="${product.name}" class="w-full h-full object-cover transition duration-300 pointer-events-none">
                             
-                            <div class="absolute top-3 left-3 bg-white/90 dark:bg-slate-900/90 text-slate-800 dark:text-slate-200 text-[11px] font-bold px-3 py-1 rounded-full border border-slate-200 dark:border-slate-800 flex items-center gap-1.5 shadow-sm">
-                                <i class="fa-solid fa-camera text-indigo-600 dark:text-indigo-400"></i> <span id="imageCounterText">1 / ${currentModalImages.length}</span>
+                            <div class="absolute top-3 left-3 bg-white/90 dark:bg-[#1e293b]/90 text-[#1e293b] dark:text-[#cbd5e1] text-[11px] font-bold px-3 py-1 rounded-full border border-[#e2e8f0] dark:border-[#334155] flex items-center gap-1.5 shadow-sm">
+                                <i class="fa-solid fa-camera text-[#0d9488] dark:text-teal-400"></i> <span id="imageCounterText">1 / ${currentModalImages.length}</span>
                             </div>
 
-                            <button onclick="openLightbox(document.getElementById('activeDetailImg').src)" class="absolute bottom-3 right-3 bg-white/90 dark:bg-slate-900/90 text-slate-800 dark:text-slate-200 text-xs px-2.5 py-1 rounded-lg flex items-center gap-1.5 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition shadow-sm">
-                                <i class="fa-solid fa-expand text-indigo-600 dark:text-indigo-400"></i> Agrandir
+                            <button onclick="openLightbox(document.getElementById('activeDetailImg').src)" class="absolute bottom-3 right-3 bg-white/90 dark:bg-[#1e293b]/90 text-[#1e293b] dark:text-[#cbd5e1] text-xs px-2.5 py-1 rounded-lg flex items-center gap-1.5 border border-[#e2e8f0] dark:border-[#334155] hover:bg-[#f1f5f9] dark:hover:bg-[#0f172a] transition shadow-sm">
+                                <i class="fa-solid fa-expand text-[#0d9488] dark:text-teal-400"></i> Agrandir
                             </button>
 
                             ${currentModalImages.length > 1 ? `
-                                <button onclick="prevModalImage(event)" class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 dark:bg-slate-900/80 hover:bg-indigo-600 hover:text-white text-slate-800 dark:text-white flex items-center justify-center transition shadow border border-slate-200 dark:border-slate-800">
+                                <button onclick="prevModalImage(event)" class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 dark:bg-[#1e293b]/80 hover:bg-[#0f172a] hover:text-white text-[#1e293b] dark:text-white flex items-center justify-center transition shadow border border-[#e2e8f0] dark:border-[#334155]">
                                     <i class="fa-solid fa-chevron-left text-xs"></i>
                                 </button>
-                                <button onclick="nextModalImage(event)" class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 dark:bg-slate-900/80 hover:bg-indigo-600 hover:text-white text-slate-800 dark:text-white flex items-center justify-center transition shadow border border-slate-200 dark:border-slate-800">
+                                <button onclick="nextModalImage(event)" class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 dark:bg-[#1e293b]/80 hover:bg-[#0f172a] hover:text-white text-[#1e293b] dark:text-white flex items-center justify-center transition shadow border border-[#e2e8f0] dark:border-[#334155]">
                                     <i class="fa-solid fa-chevron-right text-xs"></i>
                                 </button>
                             ` : ''}
 
-                            ${isOut ? `<div class="absolute inset-0 bg-black/60 flex items-center justify-center"><span class="bg-red-600 text-white font-extrabold text-xs px-3 py-1.5 rounded-lg uppercase">Rupture de stock</span></div>` : ''}
+                            ${isOut ? `<div class="absolute inset-0 bg-black/60 flex items-center justify-center"><span class="bg-red-700 text-white font-extrabold text-xs px-3 py-1.5 rounded-lg uppercase">Rupture de stock</span></div>` : ''}
                         </div>
 
                         ${currentModalImages.length > 1 ? `
                             <div class="flex gap-2 overflow-x-auto pb-2 no-scrollbar">
                                 ${currentModalImages.map((img, idx) => `
-                                    <div onclick="setModalImageIndex(${idx})" id="thumb-${idx}" class="w-16 h-16 rounded-xl overflow-hidden border-2 ${idx === 0 ? 'border-indigo-600 scale-105' : 'border-slate-200 dark:border-slate-800 opacity-70'} hover:opacity-100 cursor-pointer flex-shrink-0 bg-slate-100 dark:bg-slate-950 transition">
+                                    <div onclick="setModalImageIndex(${idx})" id="thumb-${idx}" class="w-16 h-16 rounded-xl overflow-hidden border-2 ${idx === 0 ? 'border-[#0f172a] dark:border-teal-400 scale-105' : 'border-[#e2e8f0] dark:border-[#334155] opacity-70'} hover:opacity-100 cursor-pointer flex-shrink-0 bg-[#f8fafc] dark:bg-[#0f172a] transition">
                                         <img src="${img}" class="w-full h-full object-cover">
                                     </div>
                                 `).join('')}
                             </div>
-                            <p class="text-[10px] text-slate-400 mt-1 text-center">Glissez l'image de gauche à droite ou utilisez les flèches pour défiler</p>
+                            <p class="text-[10px] text-[#94a3b8] mt-1 text-center">Glissez l'image de gauche à droite ou utilisez les flèches pour défiler</p>
                         ` : ''}
                     </div>
 
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between gap-2">
-                                <span class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 text-xs font-bold px-2.5 py-1 rounded-full uppercase">Catégories : ${catsList}</span>
+                                <span class="bg-[#f1f5f9] dark:bg-[#0f172a] border border-[#e2e8f0] dark:border-[#334155] text-[#475569] dark:text-[#94a3b8] text-xs font-bold px-2.5 py-1 rounded-full uppercase">Catégories : ${catsList}</span>
                                 <span class="text-xs font-bold px-2.5 py-1 rounded-full ${isOut ? 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-400 border border-red-200 dark:border-red-800' : 'bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-400 border border-green-200 dark:border-green-800'}">
                                     ${isOut ? 'Rupture de stock' : 'En stock'}
                                 </span>
@@ -1045,12 +1060,12 @@
                             <h2 class="text-lg sm:text-xl font-extrabold mt-2">${product.name}</h2>
                             ${priceHtml}
                             
-                            <div class="mt-4 border-t border-slate-200 dark:border-slate-800 pt-4">
-                                <h4 class="text-xs font-bold uppercase text-indigo-600 dark:text-indigo-400 mb-2 flex items-center gap-1.5"><i class="fa-solid fa-microchip"></i> Spécifications</h4>
-                                <ul class="space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
+                            <div class="mt-4 border-t border-[#e2e8f0] dark:border-[#334155] pt-4">
+                                <h4 class="text-xs font-bold uppercase text-[#0d9488] dark:text-teal-400 mb-2 flex items-center gap-1.5"><i class="fa-solid fa-microchip"></i> Spécifications</h4>
+                                <ul class="space-y-1.5 text-xs text-[#475569] dark:text-[#94a3b8]">
                                     ${product.capacities.map(cap => `
                                         <li class="flex items-start gap-2">
-                                            <i class="fa-solid fa-circle-check text-indigo-600 dark:text-indigo-400 mt-0.5"></i>
+                                            <i class="fa-solid fa-circle-check text-[#0d9488] dark:text-teal-400 mt-0.5"></i>
                                             <span>${cap}</span>
                                         </li>
                                     `).join('')}
@@ -1058,13 +1073,13 @@
                             </div>
                         </div>
                         
-                        <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex">
+                        <div class="mt-6 pt-4 border-t border-[#e2e8f0] dark:border-[#334155] flex">
                             ${isOut ? `
-                                <button disabled class="w-full bg-slate-100 dark:bg-slate-800 text-slate-400 font-bold py-3 rounded-xl cursor-not-allowed text-sm flex items-center justify-center gap-2 border border-slate-200 dark:border-slate-700">
+                                <button disabled class="w-full bg-[#f1f5f9] dark:bg-[#0f172a] text-[#94a3b8] font-bold py-3 rounded-xl cursor-not-allowed text-sm flex items-center justify-center gap-2 border border-[#e2e8f0] dark:border-[#334155]">
                                     <i class="fa-solid fa-ban"></i> Article indisponible (Rupture)
                                 </button>
                             ` : `
-                                <button onclick="addToCart(${product.id}); closeProductDetailModal();" class="flex-grow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-xl shadow-sm transition text-sm flex items-center justify-center gap-2">
+                                <button onclick="addToCart(${product.id}); closeProductDetailModal();" class="flex-grow bg-[#0f172a] hover:bg-[#1e293b] dark:bg-teal-600 text-white font-bold py-3 rounded-xl shadow-sm transition text-sm flex items-center justify-center gap-2">
                                     <i class="fa-solid fa-cart-plus"></i> Ajouter au panier
                                 </button>
                             `}
@@ -1079,7 +1094,6 @@
             document.getElementById('productDetailModal').style.display = 'none';
         }
 
-        // NAVIGATION CARROUSEL
         function updateModalImageDisplay() {
             if (currentModalImages.length === 0) return;
             document.getElementById('activeDetailImg').src = currentModalImages[currentModalImageIndex];
@@ -1089,9 +1103,9 @@
                 const thumb = document.getElementById(`thumb-${idx}`);
                 if (thumb) {
                     if (idx === currentModalImageIndex) {
-                        thumb.className = "w-16 h-16 rounded-xl overflow-hidden border-2 border-indigo-600 scale-105 cursor-pointer flex-shrink-0 bg-slate-100 dark:bg-slate-950 transition";
+                        thumb.className = "w-16 h-16 rounded-xl overflow-hidden border-2 border-[#0f172a] dark:border-teal-400 scale-105 cursor-pointer flex-shrink-0 bg-[#f8fafc] dark:bg-[#0f172a] transition";
                     } else {
-                        thumb.className = "w-16 h-16 rounded-xl overflow-hidden border-2 border-slate-200 dark:border-slate-800 opacity-70 hover:opacity-100 cursor-pointer flex-shrink-0 bg-slate-100 dark:bg-slate-950 transition";
+                        thumb.className = "w-16 h-16 rounded-xl overflow-hidden border-2 border-[#e2e8f0] dark:border-[#334155] opacity-70 hover:opacity-100 cursor-pointer flex-shrink-0 bg-[#f8fafc] dark:bg-[#0f172a] transition";
                     }
                 }
             });
@@ -1163,18 +1177,18 @@
 
             const container = document.getElementById('cartItemsContainer');
             if(cart.length === 0) {
-                container.innerHTML = `<div class="text-center py-10 text-slate-400 text-xs">Votre panier est vide.</div>`;
+                container.innerHTML = `<div class="text-center py-10 text-[#94a3b8] text-xs">Votre panier est vide.</div>`;
             } else {
                 container.innerHTML = cart.map(item => `
-                    <div class="flex items-center gap-3 bg-slate-50 dark:bg-slate-800 p-3 rounded-xl border border-slate-200 dark:border-slate-700">
-                        <img src="${item.image}" alt="${item.name}" class="w-14 h-14 object-cover rounded-xl flex-shrink-0 border border-slate-200 dark:border-slate-700">
+                    <div class="flex items-center gap-3 bg-[#f8fafc] dark:bg-[#0f172a] p-3 rounded-xl border border-[#e2e8f0] dark:border-[#334155]">
+                        <img src="${item.image}" alt="${item.name}" class="w-14 h-14 object-cover rounded-xl flex-shrink-0 border border-[#e2e8f0] dark:border-[#334155]">
                         <div class="flex-grow min-w-0">
                             <h4 class="text-xs font-bold truncate">${item.name}</h4>
-                            <div class="text-xs text-indigo-600 dark:text-indigo-400 font-extrabold mt-0.5">${item.price.toLocaleString()} FCFA</div>
+                            <div class="text-xs text-[#0d9488] dark:text-teal-400 font-extrabold mt-0.5">${item.price.toLocaleString()} FCFA</div>
                             <div class="flex items-center gap-2 mt-2">
-                                <button onclick="decreaseQuantity(${item.id})" class="w-6 h-6 rounded-lg bg-white dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-700 font-bold text-xs flex items-center justify-center border border-slate-200 dark:border-slate-700">-</button>
+                                <button onclick="decreaseQuantity(${item.id})" class="w-6 h-6 rounded-lg bg-white dark:bg-[#1e293b] hover:bg-[#e2e8f0] dark:hover:bg-[#334155] font-bold text-xs flex items-center justify-center border border-[#e2e8f0] dark:border-[#334155]">-</button>
                                 <span class="text-xs font-bold w-4 text-center">${item.quantity}</span>
-                                <button onclick="increaseQuantity(${item.id})" class="w-6 h-6 rounded-lg bg-white dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-700 font-bold text-xs flex items-center justify-center border border-slate-200 dark:border-slate-700">+</button>
+                                <button onclick="increaseQuantity(${item.id})" class="w-6 h-6 rounded-lg bg-white dark:bg-[#1e293b] hover:bg-[#e2e8f0] dark:hover:bg-[#334155] font-bold text-xs flex items-center justify-center border border-[#e2e8f0] dark:border-[#334155]">+</button>
                                 <button onclick="removeFromCart(${item.id})" class="ml-auto text-red-500 hover:text-red-400 text-xs px-2 py-1"><i class="fa-solid fa-trash"></i></button>
                             </div>
                         </div>
