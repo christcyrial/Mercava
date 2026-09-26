@@ -250,6 +250,12 @@
         </div>
     </div>
 
+    <!-- MODAL IMAGE PLEIN ÉCRAN -->
+    <div id="imageFullscreenModal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md items-center justify-center p-4" onclick="closeFullscreenImage()">
+        <button onclick="closeFullscreenImage()" class="absolute top-4 right-4 text-white text-3xl font-bold hover:text-teal-400">&times;</button>
+        <img id="fullscreenImg" src="" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl">
+    </div>
+
     <!-- TIROIR PANIER -->
     <div id="cartDrawer" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm justify-end">
         <div class="bg-white dark:bg-[#1e293b] text-[#0f172a] dark:text-white border-l border-[#e2e8f0] dark:border-[#334155] w-full max-w-md h-full shadow-2xl flex flex-col justify-between">
@@ -510,7 +516,7 @@
             }).join('');
         }
 
-        // FICHE DETAIL PRODUIT AVEC TOUTES LES IMAGES (SOUS PLUSIEURS ANGLES) ET CARACTERISTIQUES
+        // FICHE DETAIL PRODUIT AVEC TOUTES LES IMAGES ET PLEIN ÉCRAN
         function openProductDetailModal(id) {
             const p = products.find(prod => prod.id === id);
             if(!p) return;
@@ -518,9 +524,12 @@
 
             document.getElementById('productDetailContent').innerHTML = `
                 <div class="space-y-4">
-                    <!-- Image Principale -->
-                    <div class="aspect-video bg-[#f8fafc] dark:bg-[#0f172a] rounded-xl overflow-hidden relative border border-[#e2e8f0] dark:border-[#334155]">
-                        <img id="mainDetailImg" src="${images[0]}" class="w-full h-full object-cover">
+                    <!-- Image Principale Cliquable -->
+                    <div class="aspect-video bg-[#f8fafc] dark:bg-[#0f172a] rounded-xl overflow-hidden relative border border-[#e2e8f0] dark:border-[#334155] cursor-pointer group" onclick="openFullscreenImage(document.getElementById('mainDetailImg').src)">
+                        <img id="mainDetailImg" src="${images[0]}" class="w-full h-full object-cover transition group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-1.5">
+                            <i class="fa-solid fa-expand"></i> Voir en plein écran
+                        </div>
                     </div>
                     <!-- Miniatures (Plusieurs angles) -->
                     ${images.length > 1 ? `
@@ -565,6 +574,16 @@
             document.getElementById('productDetailModal').style.display = 'flex';
         }
         function closeProductDetailModal() { document.getElementById('productDetailModal').style.display = 'none'; }
+
+        // GESTION DE LA MODALE PLEIN ÉCRAN
+        function openFullscreenImage(src) {
+            if(!src) return;
+            document.getElementById('fullscreenImg').src = src;
+            document.getElementById('imageFullscreenModal').style.display = 'flex';
+        }
+        function closeFullscreenImage() {
+            document.getElementById('imageFullscreenModal').style.display = 'none';
+        }
 
         function addToCart(id) {
             const p = products.find(prod => prod.id === id);
